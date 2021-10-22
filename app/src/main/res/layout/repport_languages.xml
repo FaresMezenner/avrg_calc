@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/almarai_extrabold"
+            android:background="@android:color/holo_blue_dark"
+            android:text="كشف النقاط"
+            android:padding="5dp"
+            android:gravity="center"></TextView>
+        
+        
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled"
+                android:text="معدل المادة"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled"
+                android:text="المادة"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+            
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/arabic_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/arabic_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="العربية"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/philo_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/philo_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="الفلسفة"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/islamia_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/islamia_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="اسلامية"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/history_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="تاريخ و جغرافيا"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/french_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/french_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="الفرنسية"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/english_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/english_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="الانجليزية"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/language_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/language_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="اللغة الاجنبية 3"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/math_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/math_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="الرياضيات"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/sport_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/sport_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="الرياضة"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kabyle_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/kabyle_avrg"
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_border"
+                android:text=""
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_bold"
+                android:background="@drawable/button_filled2"
+                android:text="الامازيغية"
+                android:padding="5dp"
+                android:gravity="center"
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="@font/almarai_extrabold"
+            android:text="المعدل:"
+            android:padding="5dp"
+            android:gravity="center"></TextView>
+
+
+        <TextView
+            android:id="@+id/total_avrg"
+            android:layout_marginHorizontal="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="@font/almarai_extrabold"
+            android:background="@drawable/button_border"
+            android:text="17.79"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="5dp"
+            android:gravity="center"
+            ></TextView>
+
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="حسنًا"
+            android:textSize="16.5sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/almarai_regular"
+            android:background="@drawable/button_filled"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:padding="2dp"></Button>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Branchs"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:id="@+id/year_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text="السنة الثالثة ثانوي"
+            android:textColor="@color/white"
+            android:textSize="30sp"></TextView>
+
+        <ImageView
+            android:id="@+id/back"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/title_layout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/branchs_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toLeftOf="@id/branchs_title"
+                android:background="@android:color/darker_gray"></View>
+
+            <TextView
+                android:id="@+id/branchs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/almarai_bold"
+                android:text="الشعب"
+                android:textSize="20sp"></TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@id/branchs_title"
+                android:background="@android:color/darker_gray"></View>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_below="@id/branchs_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/math_and_science"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/math_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="10dp"
+                        android:layout_margin="10dp">
+
+                        <Button
+                            android:id="@+id/math"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/math"></Button>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_toRightOf="@id/math_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="10dp"
+                        android:layout_margin="10dp">
+
+                        <Button
+
+                            android:id="@+id/science"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/science"
+                            ></Button>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tech_and_gestion"
+                    android:layout_below="@id/math_and_science"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tech_cv"
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+                                android:id="@+id/tech"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/tech"></Button>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_toRightOf="@id/tech_cv"
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+
+                                android:id="@+id/gestion"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/gestion"
+                                ></Button>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@id/tech_and_gestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/languages_cv"
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+                                android:id="@+id/languages"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/languages"></Button>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_toRightOf="@id/languages_cv"
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+
+                                android:id="@+id/lettre"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/lettre"
+                                ></Button>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad"
+        android:layout_alignParentBottom="true"
+        ></WebView>
+
+</RelativeLayout>

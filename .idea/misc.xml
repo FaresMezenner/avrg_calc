@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/FARES/AppData/Local/Android/sdk/platforms/android-30/data/res/layout/list_menu_item_checkbox.xml" value="0.2418478260869565" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/alert_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/art.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/back.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/button_border.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/button_border_red.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/button_filled.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/button_filled2.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/checkbox.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/checkbox_border.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/checkbox_border_red.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/checkbox_checked.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/facebook.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/ic_bem.xml" value="0.8800000000000001" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/insta.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/kabyle.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/line.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/mail.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/sport.xml" value="0.2703125" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/activity_about.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/activity_branchs_jd.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/activity_math_and_science.xml" value="0.536" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/activity_math_and_science_3as.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/activity_third_as.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/am1.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/am2.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/am3.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/am4.xml" value="0.5270588235294118" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bac.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bac_gestion.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bac_languages.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bac_lettre.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bac_math.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bac_science.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bac_tech.xml" value="0.35294117647058826" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/bem.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/branchs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/contact.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/fill_all.xml" value="0.536" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/gestion32as.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/gestion_2as.xml" value="0.536" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/gestion_3as.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/languages_2as.xml" value="0.176" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/languages_3as.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/lettre_2as.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/lettre_3as.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/lettre_jd.xml" value="0.536" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/math_2as.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/math_3as.xml" value="0.176" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/math_and_science_3as.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/privacy_and_terms.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_4am.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_bac.xml" value="0.6" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_bem.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_cem.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_gestion.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_languages.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_lettre.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_lettre_jd.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_official.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_science.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_science_jd.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/repport_tech.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/save_before.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/science_2as.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/science_3as.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/science_jd.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/tech3_as.xml" value="0.264" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/tech_2as.xml" value="0.2" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/tech_3as.xml" value="0.4" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/wait.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

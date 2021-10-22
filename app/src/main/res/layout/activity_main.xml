@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="حساب المعدل"
+        android:textColor="@color/white"
+        android:textSize="30sp"></TextView>
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+
+        android:src="@drawable/back"></ImageView>
+
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+      
+
+            <LinearLayout
+                android:id="@+id/finals_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/finals_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View
+
+                        android:layout_margin="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/finals_title"
+                        android:background="@android:color/darker_gray"></View>
+
+                    <TextView
+                        android:id="@+id/finals_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/almarai_bold"
+                        android:text="الامتحانات الرسمية"
+                        android:textSize="20sp"></TextView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toRightOf="@id/finals_title"
+                        android:background="@android:color/darker_gray"></View>
+
+
+                </RelativeLayout>
+
+
+                <HorizontalScrollView
+
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+                                android:id="@+id/bac"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/bac"></Button>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+
+                                android:id="@+id/bem"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/bem"></Button>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/lycee_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/lycee_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View
+
+                        android:layout_margin="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/lycee_title"
+                        android:background="@android:color/darker_gray"></View>
+
+                    <TextView
+                        android:id="@+id/lycee_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/almarai_bold"
+                        android:text="التعليم الثانوي"
+                        android:textSize="20sp"></TextView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toRightOf="@id/lycee_title"
+                        android:background="@android:color/darker_gray"></View>
+
+
+                </RelativeLayout>
+
+                <HorizontalScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+                            <Button
+                                android:id="@+id/three_as"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/_3as"></Button>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+
+                                android:id="@+id/second_as"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/_2as"></Button>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="160dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="10dp"
+                            android:elevation="10dp"
+                            android:layout_margin="10dp">
+
+                            <Button
+
+                                android:id="@+id/first_as"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="@drawable/_1as"></Button>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/cem_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/cem_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/cem_title"
+                    android:background="@android:color/darker_gray"></View>
+
+                <TextView
+                    android:id="@+id/cem_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/almarai_bold"
+                    android:text="التعليم المتوسط"
+                    android:textSize="20sp"></TextView>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@id/cem_title"
+                    android:background="@android:color/darker_gray"></View>
+
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="10dp"
+                        android:layout_margin="10dp">
+                        <Button
+                            android:id="@+id/foorth_am"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/_4am"></Button>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="10dp"
+                        android:layout_margin="10dp">
+
+                        <Button
+
+                            android:id="@+id/third_am"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/_3am"></Button>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="10dp"
+                        android:layout_margin="10dp">
+
+                        <Button
+
+                            android:id="@+id/second_am"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/_2am"></Button>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="10dp"
+                        android:layout_margin="10dp">
+
+                        <Button
+
+                            android:id="@+id/first_am"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/_1am"></Button>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+<WebView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ad"
+    android:layout_alignParentBottom="true"
+    ></WebView>
+
+
+</RelativeLayout>

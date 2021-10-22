@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First">
+
+    <TextView
+        android:id="@+id/naming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="@font/almarai_extrabold"
+        android:gravity="center"
+        android:text="بسم الله الرحمان الرحيم"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/naming"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/almarai_extrabold"
+        android:text="حاسب المعدل"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="40sp"></TextView>
+
+    <TextView
+        android:id="@+id/high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/almarai_bold"
+        android:text="متوسط - ثانوي"
+        android:textColor="#79D2F6"
+        android:textSize="30sp"></TextView>
+
+    <TextView
+        android:id="@+id/official"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/high"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotica"
+        android:layout_marginVertical="10dp"
+        android:text="BAC - BEM"
+        android:textColor="#79D2F6"
+        android:textSize="30sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/main_title"
+        android:layout_alignLeft="@id/main_title"
+        android:layout_below="@id/official"
+        android:orientation="vertical"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_marginVertical="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/calcualte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_filled"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_regular"
+                android:textSize="20dp"
+                android:text="حساب المعدل"
+                ></Button>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginVertical="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_filled"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_regular"
+                android:textSize="20dp"
+                android:text="حول التطبيق"
+                ></Button>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginVertical="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_filled"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_regular"
+                android:textSize="20dp"
+                android:text="تواصلوا معنا"
+                ></Button>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginVertical="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_filled"
+                android:textColor="@color/white"
+                android:fontFamily="@font/almarai_regular"
+                android:textSize="20dp"
+                android:text="الإبلاغ عن خطأ"
+                ></Button>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/rights"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:text="بإستخدامك للتطبيق فأنت توافق على سياسة الخصوصية و على شروط الاستخدام"
+        android:textSize="17sp"></TextView>
+
+    <TextView
+        android:id="@+id/rights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:text="©حاسب المعدل 2021 • جميع الحقوق محفوظة"
+        android:textSize="17sp"></TextView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.faresmezenner.avrgcalc">
+
+    <uses-permission android:name="android.permission.CALL_COMPANION_APP"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.حاسبالمعدل">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4518143721838436~2301938209"/>
+
+
+        <activity
+            android:name=".Contact"
+            android:exported="true" />
+        <activity
+            android:name=".About"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Am1"
+            android:exported="true" />
+        <activity
+            android:name=".Am2"
+            android:exported="true" />
+        <activity
+            android:name=".Am3"
+            android:exported="true" />
+        <activity
+            android:name=".Am4"
+            android:exported="true" />
+        <activity
+            android:name=".Bem"
+            android:exported="true" />
+        <activity
+            android:name=".Bac_Lettre"
+            android:exported="true" />
+        <activity
+            android:name=".Bac_languages"
+            android:exported="true" />
+        <activity
+            android:name=".Bac_gestion"
+            android:exported="true" />
+        <activity
+            android:name=".Bac_tech"
+            android:exported="true" />
+        <activity
+            android:name=".Bac_science"
+            android:exported="true" />
+        <activity
+            android:name=".Bac_math"
+            android:exported="true" />
+        <activity
+            android:name=".Lettre_jd"
+            android:exported="true" />
+        <activity
+            android:name=".Gestion_2as"
+            android:exported="true" />
+        <activity
+            android:name=".Gestion_3as"
+            android:exported="true" />
+        <activity
+            android:name=".Lettre_2as"
+            android:exported="true" />
+        <activity
+            android:name=".Lettre_3as"
+            android:exported="true" />
+        <activity
+            android:name=".Languages_2as"
+            android:exported="true" />
+        <activity
+            android:name=".Languages_3as"
+            android:exported="true" />
+        <activity
+            android:name=".Science_jd"
+            android:exported="true" />
+        <activity
+            android:name=".Tech_2as"
+            android:exported="true" />
+        <activity
+            android:name=".Science_2as"
+            android:exported="true" />
+        <activity
+            android:name=".Math_2as"
+            android:exported="true" />
+        <activity
+            android:name=".Tech_3as"
+            android:exported="true" />
+        <activity
+            android:name=".Science_3as"
+            android:exported="true" />
+        <activity
+            android:name=".Math_3as"
+            android:exported="true" />
+        <activity
+            android:name=".Branchs_jd"
+            android:exported="true" />
+        <activity
+            android:name=".Branchs"
+            android:exported="true" />
+        <activity
+            android:name=".First"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

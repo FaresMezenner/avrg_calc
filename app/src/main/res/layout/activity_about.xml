@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="@font/almarai_extrabold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="حول التطبيق"
+        android:textColor="@color/white"
+        android:textSize="40sp"></TextView>
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/main_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back"></ImageView>
+
+
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/second_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:text="تم تطوير التطبيق من قبل:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"></TextView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/second_main"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_for_app"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FARES MEZENNER"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/name"
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/second_main"
+        android:layout_alignRight="@id/second_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="@font/almarai_regular"
+        android:gravity="center"
+        android:text="الهدف من هذا التطبيق هو تسهيل حساب المعدلات الفصلية و الرسمية للتلاميذ الجزائريين المتمدرسين في الثانويات و المتوسطات"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"></TextView>
+
+</RelativeLayout>

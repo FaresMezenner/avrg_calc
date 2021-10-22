@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact">
+
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="@font/almarai_extrabold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="تواصلوا معنا"
+        android:textColor="@color/white"
+        android:textSize="40sp"></TextView>
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/main_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back"></ImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/insta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/insta"
+            android:drawableTint="@android:color/holo_blue_dark"
+            android:fontFamily="@font/robotica"
+            android:gravity="center"
+            android:text="fares_mezenner"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/face"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="@font/robotica"
+            android:text="fares mezenner"
+            android:gravity="center"
+            android:drawableLeft="@drawable/facebook"
+            android:drawableTint="@android:color/holo_blue_dark"
+            ></TextView>
+
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="@font/robotica"
+            android:text="faresmezenner@gmail.com"
+            android:gravity="center"
+            android:drawableLeft="@drawable/mail"
+            android:drawableTint="@android:color/holo_blue_dark"
+            ></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

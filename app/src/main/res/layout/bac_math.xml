@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/year_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:text="الباكالوريا"
+        android:textColor="@color/white"
+        android:textSize="25sp"></TextView>
+
+    <TextView
+        android:id="@+id/branch_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/year_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:text="شعبة رياضيات"
+        android:textColor="@color/white"></TextView>
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/year_title"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back"></ImageView>
+
+    <WebView
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/branch_title"></WebView>
+
+
+
+
+
+    <TextView
+        android:id="@+id/enter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad"
+        android:layout_centerInParent="true"
+        android:drawableRight="@drawable/line"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:text="ادخال النقاط"
+        android:textSize="20sp"></TextView>
+    <TableRow
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/enter_title"
+        android:layout_toLeftOf="@id/enter_title"
+        android:layout_alignTop="@id/enter_title">
+
+        <View
+
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="3dp"
+            android:background="@android:color/darker_gray"></View>
+
+    </TableRow>
+
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/enter_title"
+        android:layout_toRightOf="@id/enter_title"
+        android:layout_alignTop="@id/enter_title">
+
+        <View
+
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="3dp"
+            android:background="@android:color/darker_gray"></View>
+
+    </TableRow>
+    <LinearLayout
+        android:id="@+id/checkboxs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:layout_below="@id/enter_title"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_weight="1"
+            android:id="@+id/kabyle_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_title"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_filled"
+            android:buttonTint="@color/white"
+            android:checked="false"
+            android:drawableRight="@drawable/kabyle"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/almarai_bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=" معني بالامازيغية"
+            android:textColor="@color/white"
+            android:textSize="18sp"></CheckBox>
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/kabyle_checkbox"
+            android:id="@+id/sport_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_title"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_filled"
+            android:buttonTint="@color/white"
+            android:checked="true"
+            android:drawableRight="@drawable/sport"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/almarai_bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=" معني بالرياضة"
+            android:textColor="@color/white"
+            android:textSize="18sp"></CheckBox>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/elements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxs"
+        android:layout_marginHorizontal="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/almarai_regular"
+            android:text="النقطة"
+            android:background="@drawable/button_filled"
+            ></TextView>
+
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/almarai_regular"
+            android:text="المعاملات"
+            android:background="@drawable/button_filled"
+            ></TextView>
+
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/almarai_regular"
+            android:text="المواد"
+            android:background="@drawable/button_filled"
+            ></TextView>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tools"
+        android:layout_below="@id/elements"
+        android:layout_marginHorizontal="3dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+                <TextView
+                    android:id="@+id/coefficient_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="العربية"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arabic"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_math"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+                <TextView
+                    android:id="@+id/coefficient_math"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="الرياضيات"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/physic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/math"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_physic"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+                <TextView
+                    android:id="@+id/coefficient_physic"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="الفيزياء"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/science"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tech"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_science"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+
+                <TextView
+                    android:id="@+id/coefficient_science"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="ع. طبيعية"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/islamia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tech"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_islamia"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+
+                <TextView
+                    android:id="@+id/coefficient_islamia"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="اسلامية"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+                <TextView
+                    android:id="@+id/coefficient_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="تاريخ و جغرافيا"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/french"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/history"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_french"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+                <TextView
+                    android:id="@+id/coefficient_french"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="الفرنسية"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/french"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+                <TextView
+                    android:id="@+id/coefficient_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="الانجليزية"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/philo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/english"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_philo"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+
+                <TextView
+                    android:id="@+id/coefficient_philo"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="الفلسفة"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+
+                <TextView
+                    android:id="@+id/coefficient_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="الرياضة"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kabyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/exam_kabyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="2dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="13sp"></EditText>
+                <TextView
+                    android:id="@+id/coefficient_kabyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_filled2"
+                    android:fontFamily="@font/almarai_regular"
+                    android:gravity="center"
+                    android:text="الامازيغية"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"></TextView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button_filled"
+            android:fontFamily="@font/almarai_bold"
+            android:gravity="center"
+            android:padding="0dp"
+            android:layout_marginHorizontal="7.5dp"
+            android:text="افراغ الخانات"
+            android:textColor="@color/white"
+            android:textSize="10sp"></Button>
+
+
+        <Button
+
+            android:layout_marginHorizontal="7.5dp"
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_filled"
+            android:fontFamily="@font/almarai_bold"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="حساب المعدل"
+            android:textColor="@color/white"
+            android:textSize="13sp"></Button>
+
+
+        <Button
+            android:layout_marginHorizontal="7.5dp"
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button_filled"
+            android:fontFamily="@font/almarai_bold"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="حفظ المعلومات"
+            android:textColor="@color/white"
+            android:textSize="10sp"></Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
