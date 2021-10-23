@@ -18,7 +18,10 @@
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/checkbox_checked.xml" value="0.2703125" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/facebook.xml" value="0.2703125" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/ic_bem.xml" value="0.8800000000000001" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/ic_icon.xml" value="0.2703125" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/icon_backgrouns.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/icon_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/insta.xml" value="0.2703125" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/kabyle.xml" value="0.2703125" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/drawable/line.xml" value="0.2703125" />
@@ -79,6 +82,7 @@
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/tech_2as.xml" value="0.2" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/tech_3as.xml" value="0.4" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/wait.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
   </component>
