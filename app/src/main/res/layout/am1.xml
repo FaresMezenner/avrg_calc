@@ -31,11 +31,19 @@
         android:layout_centerVertical="true"
         android:src="@drawable/back"></ImageView>
 
-    <WebView
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/ad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/year_title"></WebView>
+        android:layout_below="@id/back"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7783931967114342/9194735333"></com.google.android.gms.ads.AdView>
+
+
+
+
 
 
 
