@@ -52,7 +52,7 @@ public class Calculations {
         DecimalFormat df = new DecimalFormat("#.##");
         df.setRoundingMode(RoundingMode.HALF_UP);
 
-        return result;
+        return normalizer(result);
 
 
     }
@@ -96,7 +96,7 @@ public class Calculations {
         DecimalFormat df = new DecimalFormat("#.##");
         df.setRoundingMode(RoundingMode.HALF_UP);
 
-        return result;
+        return normalizer(result);
 
     }
 
@@ -125,7 +125,7 @@ public class Calculations {
         DecimalFormat df = new DecimalFormat("#.##");
         df.setRoundingMode(RoundingMode.HALF_UP);
 
-        return result;
+        return normalizer(result);
     }
 
 
@@ -170,7 +170,52 @@ public class Calculations {
         DecimalFormat df = new DecimalFormat("#.##");
         df.setRoundingMode(RoundingMode.HALF_UP);
 
-        return result;
+        return normalizer(result);
+
+
+    }
+
+    double normalizer(double t){
+
+
+
+        String t1 = String.valueOf(t);
+
+        String t2 = "";
+
+
+        if(t >10){
+
+            if(t1.length() > 5) {
+
+                for(int i = 0; i<5; i++) {
+
+                    t2 = t2 + t1.charAt(i);
+
+                }
+
+
+            }
+
+        } else {
+
+
+            if(t1.length() > 4) {
+
+                for(int i = 0; i<4; i++) {
+
+                    t2 = t2 + t1.charAt(i);
+
+                }
+
+
+            }
+
+        }
+
+        double c = Double.valueOf(t2);
+
+        return c;
 
 
     }
