@@ -14,7 +14,7 @@ public class About extends AppCompatActivity {
         setContentView(R.layout.activity_about);
 
 
-
+//hi
 
         ImageView back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {

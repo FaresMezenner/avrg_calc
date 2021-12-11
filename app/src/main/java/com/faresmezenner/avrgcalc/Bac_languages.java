@@ -190,7 +190,6 @@ public class Bac_languages extends AppCompatActivity {
             note[7].setOnFocusChangeListener(onFocusChangeListener);
             note[8].setOnFocusChangeListener(onFocusChangeListener);
             note[9].setOnFocusChangeListener(onFocusChangeListener);
-            note[10].setOnFocusChangeListener(onFocusChangeListener);
         }
 
         Button save = findViewById(R.id.save);

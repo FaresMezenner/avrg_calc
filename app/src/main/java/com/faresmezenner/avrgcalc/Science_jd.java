@@ -102,7 +102,7 @@ public class Science_jd extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tech_2as);
+        setContentView(R.layout.science_jd);
 
 
 

@@ -188,8 +188,6 @@ public class Bac_Lettre extends AppCompatActivity {
             note[6].setOnFocusChangeListener(onFocusChangeListener);
             note[7].setOnFocusChangeListener(onFocusChangeListener);
             note[8].setOnFocusChangeListener(onFocusChangeListener);
-            note[9].setOnFocusChangeListener(onFocusChangeListener);
-            note[10].setOnFocusChangeListener(onFocusChangeListener);
         }
 
         Button save = findViewById(R.id.save);
