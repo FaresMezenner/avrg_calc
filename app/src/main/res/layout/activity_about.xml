@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#001050"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".About">
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/holo_blue_dark"
+        android:background="#001035"
         android:fontFamily="@font/almarai_extrabold"
         android:gravity="center"
         android:padding="10dp"
@@ -34,17 +35,17 @@
 
 
     <TextView
-        android:layout_marginHorizontal="20dp"
         android:id="@+id/second_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/main_title"
         android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="20dp"
         android:fontFamily="@font/almarai_bold"
         android:gravity="center"
         android:text="تم تطوير التطبيق من قبل:"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
         android:textSize="30sp"></TextView>
 
     <ImageView
@@ -53,19 +54,18 @@
         android:layout_height="200dp"
         android:layout_below="@id/second_main"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_for_app"
-        ></ImageView>
+        android:src="@drawable/final_logo_2"></ImageView>
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FARES MEZENNER"
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
-        android:textSize="24sp"
-        android:textColor="@android:color/holo_blue_dark"
-        android:id="@+id/name"
-        ></TextView>
+        android:fontFamily="@font/script_soft_normal"
+        android:text="Tech Torch"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"></TextView>
 
 
     <TextView
@@ -79,7 +79,7 @@
         android:fontFamily="@font/almarai_regular"
         android:gravity="center"
         android:text="الهدف من هذا التطبيق هو تسهيل حساب المعدلات الفصلية و الرسمية للتلاميذ الجزائريين المتمدرسين في الثانويات و المتوسطات"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
         android:textSize="30sp"></TextView>
 
 </RelativeLayout>

@@ -46,11 +46,11 @@
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/insta"
             android:drawableTint="@android:color/holo_blue_dark"
-            android:fontFamily="@font/robotica"
+            android:fontFamily="@font/script_soft_normal"
             android:gravity="center"
-            android:text="fares_mezenner"
+            android:text="tech.torch"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="30sp"></TextView>
+            android:textSize="40sp"></TextView>
 
 
         <TextView
@@ -58,10 +58,10 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:textColor="@android:color/holo_blue_dark"
-            android:fontFamily="@font/robotica"
-            android:text="fares mezenner"
+            android:fontFamily="@font/script_soft_normal"
+            android:text="Tech Torch"
             android:gravity="center"
             android:drawableLeft="@drawable/facebook"
             android:drawableTint="@android:color/holo_blue_dark"
@@ -73,10 +73,10 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="40sp"
             android:textColor="@android:color/holo_blue_dark"
-            android:fontFamily="@font/robotica"
-            android:text="faresmezenner@gmail.com"
+            android:fontFamily="@font/script_soft_normal"
+            android:text="tech.torch.cs@gmail.com"
             android:gravity="center"
             android:drawableLeft="@drawable/mail"
             android:drawableTint="@android:color/holo_blue_dark"

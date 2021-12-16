@@ -80,12 +80,39 @@
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/tech_3as.xml" value="0.4" />
         <entry key="..\:/Users/FARES/Documents/2/app/src/main/res/layout/wait.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/button_border.xml" value="0.2703125" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/facebook.xml" value="0.2703125" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/ic_icon.xml" value="0.2703125" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/ic_icon_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/icon_backgrouns.xml" value="0.2703125" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/icon_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/drawable/insta.xml" value="0.2703125" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/activity_about.xml" value="0.176" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/activity_branchs_jd.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/activity_main.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/am1.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/am2.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/am3.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/am4.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/bac_gestion.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/bac_languages.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/bac_lettre.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/bac_math.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/bac_science.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/bac_tech.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/branchs.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/contact.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/gestion_3as.xml" value="0.5078776645041705" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/languages_2as.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/languages_3as.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/lettre_2as.xml" value="0.5078776645041705" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/lettre_3as.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/privacy_and_terms.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/repport_4am.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/science_2as.xml" value="0.24818840579710144" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/science_jd.xml" value="0.264" />
+        <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/layout/tech_2as.xml" value="0.5078776645041705" />
         <entry key="..\:/Users/gtx/AndroidStudioProjects/avrg_calc/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>

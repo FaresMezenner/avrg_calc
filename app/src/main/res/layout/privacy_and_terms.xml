@@ -26,14 +26,12 @@
             ></TextView>
 
 
-
         <WebView
             android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:layout_below="@id/title"
-            android:layout_centerHorizontal="true"
-            ></WebView>
+            android:layout_centerHorizontal="true"></WebView>
 
 
             <androidx.appcompat.widget.AppCompatButton

@@ -37,7 +37,7 @@
         android:layout_below="@id/back"
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-7783931967114342/9194735333"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="ca-app-pub-6882017650263743/6597181483"></com.google.android.gms.ads.AdView>
 
 
 

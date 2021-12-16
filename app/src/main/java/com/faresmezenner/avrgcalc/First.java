@@ -55,7 +55,7 @@ public class First extends AppCompatActivity {
             public void onClick(View v) {
                 String subj = "Error Report";
                 Intent intent = new Intent(Intent.ACTION_SENDTO); // it's not ACTION_SEND
-                intent.setData(Uri.parse("mailto:faresmezenner@gmail.com")); // or just "mailto:" for blank
+                intent.setData(Uri.parse("mailto:tech.torch.cs@gmail.com")); // or just "mailto:" for blank
                 intent.putExtra(Intent.EXTRA_SUBJECT, subj);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // this will make such that when user returns to your app, your app is displayed, instead of the email app.
 
