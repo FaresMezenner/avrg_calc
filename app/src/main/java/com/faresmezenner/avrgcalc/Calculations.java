@@ -195,6 +195,10 @@ public class Calculations {
                 }
 
 
+            } else {
+
+                t2 = t1;
+
             }
 
         } else {
@@ -208,6 +212,10 @@ public class Calculations {
 
                 }
 
+
+            } else {
+
+                t2 = t1;
 
             }
 
