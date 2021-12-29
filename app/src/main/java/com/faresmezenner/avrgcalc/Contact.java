@@ -19,10 +19,9 @@ public class Contact extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contact);
 
-        TextView[] textViews = new TextView[3];
+        TextView[] textViews = new TextView[2];
         textViews[0] = findViewById(R.id.insta);
-        textViews[1] = findViewById(R.id.face);
-        textViews[2] = findViewById(R.id.mail);
+        textViews[1] = findViewById(R.id.mail);
 
 
         ImageView back = findViewById(R.id.back);
@@ -53,14 +52,6 @@ public class Contact extends AppCompatActivity {
         });
 
 
-        textViews[1].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(newFacebookIntent(getPackageManager(), "100073500715493"));
-
-            }
-        });
 
 
     }

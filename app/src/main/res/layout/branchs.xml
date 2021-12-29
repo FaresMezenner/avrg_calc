@@ -101,19 +101,19 @@
                 <RelativeLayout
 
                     android:id="@+id/math_and_science"
-                    android:gravity="center"
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/math_cv"
                         android:layout_width="160dp"
                         android:layout_height="80dp"
-                        app:cardCornerRadius="10dp"
+                        android:layout_margin="10dp"
                         android:elevation="10dp"
-                        android:layout_margin="10dp">
+                        app:cardCornerRadius="10dp">
 
                         <Button
                             android:id="@+id/math"
@@ -125,22 +125,20 @@
 
 
                     <androidx.cardview.widget.CardView
-                        android:layout_toRightOf="@id/math_cv"
                         android:layout_width="160dp"
                         android:layout_height="80dp"
-                        app:cardCornerRadius="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/math_cv"
                         android:elevation="10dp"
-                        android:layout_margin="10dp">
+                        app:cardCornerRadius="10dp">
 
                         <Button
 
                             android:id="@+id/science"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:foreground="@drawable/science"
-                            ></Button>
+                            android:foreground="@drawable/science"></Button>
                     </androidx.cardview.widget.CardView>
-
 
 
                 </RelativeLayout>

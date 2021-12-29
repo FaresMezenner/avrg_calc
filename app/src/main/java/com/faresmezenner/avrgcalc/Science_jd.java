@@ -117,6 +117,12 @@ public class Science_jd extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
 
+        AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Science_jd.this,R.style.CustomAlertDialog);
+        ViewGroup viewGroup2 = findViewById(android.R.id.content);
+        View dialogView2 = LayoutInflater.from(Science_jd.this).inflate(R.layout.repport_science_jd, viewGroup2, false);
+        Button buttonOk2 =dialogView2.findViewById(R.id.ok);
+        alertBuilder2.setView(dialogView2);
+        AlertDialog alerdialog2 = alertBuilder2.create();
 
 
 
@@ -277,7 +283,7 @@ public class Science_jd extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !exam[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !exam[finalI].getText().toString().isEmpty() && !exam[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(exam[finalI].getText().toString()) > 20 || Double.valueOf(exam[finalI].getText().toString()) < 0) {
                                     exam[finalI].setTextColor(getResources().getColor(R.color.red));
                                     exam[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -310,7 +316,7 @@ public class Science_jd extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !test2[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !test2[finalI].getText().toString().isEmpty() && !test2[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(test2[finalI].getText().toString()) > 20 || Double.valueOf(test2[finalI].getText().toString()) < 0) {
                                     test2[finalI].setTextColor(getResources().getColor(R.color.red));
                                     test2[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -344,7 +350,7 @@ public class Science_jd extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !test1[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !test1[finalI].getText().toString().isEmpty() && !test1[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(test1[finalI].getText().toString()) > 20 || Double.valueOf(test1[finalI].getText().toString()) < 0) {
                                     test1[finalI].setTextColor(getResources().getColor(R.color.red));
                                     test1[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -380,7 +386,7 @@ public class Science_jd extends AppCompatActivity {
                             @Override
                             public void onFocusChange(View v, boolean hasFocus) {
 
-                                if (!hasFocus && !application[finalI].getText().toString().isEmpty()) {
+                                if (!hasFocus && !application[finalI].getText().toString().isEmpty() && !application[finalI].getText().toString().equals(".")) {
                                     if (Double.valueOf(application[finalI].getText().toString()) > 20 || Double.valueOf(application[finalI].getText().toString()) < 0) {
                                         application[finalI].setTextColor(getResources().getColor(R.color.red));
                                         application[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -415,7 +421,7 @@ public class Science_jd extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !ta9wim[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !ta9wim[finalI].getText().toString().isEmpty() && !ta9wim[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(ta9wim[finalI].getText().toString()) > 20 || Double.valueOf(ta9wim[finalI].getText().toString()) < 0) {
                                     ta9wim[finalI].setTextColor(getResources().getColor(R.color.red));
                                     ta9wim[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -451,7 +457,7 @@ public class Science_jd extends AppCompatActivity {
                     @Override
                     public void onFocusChange(View v, boolean hasFocus) {
 
-                        if (!hasFocus && !lasts[0].getText().toString().isEmpty()) {
+                        if (!hasFocus && !lasts[0].getText().toString().isEmpty() && !lasts[0].getText().toString().equals(".")) {
                             if (Double.valueOf(lasts[0].getText().toString()) > 20 || Double.valueOf(lasts[0].getText().toString()) < 0) {
                                 lasts[0].setTextColor(getResources().getColor(R.color.red));
                                 lasts[0].setBackgroundResource(R.drawable.button_border_red);
@@ -482,7 +488,7 @@ public class Science_jd extends AppCompatActivity {
                     @Override
                     public void onFocusChange(View v, boolean hasFocus) {
 
-                        if (!hasFocus && !lasts[1].getText().toString().isEmpty()) {
+                        if (!hasFocus && !lasts[1].getText().toString().isEmpty() && !lasts[1].getText().toString().equals(".")) {
                             if (Double.valueOf(lasts[1].getText().toString()) > 20 || Double.valueOf(lasts[1].getText().toString()) < 0) {
                                 lasts[1].setTextColor(getResources().getColor(R.color.red));
                                 lasts[1].setBackgroundResource(R.drawable.button_border_red);
@@ -655,6 +661,11 @@ public class Science_jd extends AppCompatActivity {
 
 
 
+
+        LinearLayout philo_layout2 = dialogView2.findViewById(R.id.philo_layout);
+        LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
+        LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
+
         if(prefs.getBoolean("kabyle", false)){
             kabyle.setVisibility(View.VISIBLE);
             kabyle_coefficient.setVisibility(View.VISIBLE);
@@ -662,6 +673,7 @@ public class Science_jd extends AppCompatActivity {
             kabyle_application.setVisibility(View.VISIBLE);
             test1[11].setVisibility(View.VISIBLE);
             kabyle_layout.setVisibility(View.VISIBLE);
+            kabyle_layout2.setVisibility(View.VISIBLE);
             exam[11].setVisibility(View.VISIBLE);
             kabyle_checkbox.setChecked(true);
         } else {
@@ -672,6 +684,7 @@ public class Science_jd extends AppCompatActivity {
             test1[11].setVisibility(View.GONE);
             exam[11].setVisibility(View.GONE);
             kabyle_layout.setVisibility(View.GONE);
+            kabyle_layout2.setVisibility(View.GONE);
             kabyle_checkbox.setChecked(false);
         }
 
@@ -685,6 +698,7 @@ public class Science_jd extends AppCompatActivity {
             test1[10].setVisibility(View.VISIBLE);
             exam[10].setVisibility(View.VISIBLE);
             sport_layout.setVisibility(View.VISIBLE);
+            sport_layout2.setVisibility(View.VISIBLE);
             sport_checkbox.setChecked(true);
         } else {
             sport.setVisibility(View.GONE);
@@ -694,6 +708,7 @@ public class Science_jd extends AppCompatActivity {
             test1[10].setVisibility(View.GONE);
             exam[10].setVisibility(View.GONE);
             sport_layout.setVisibility(View.GONE);
+            sport_layout2.setVisibility(View.GONE);
             sport_checkbox.setChecked(false);
         }
 
@@ -708,7 +723,6 @@ public class Science_jd extends AppCompatActivity {
             }
 
         }
-
 
 
 
@@ -737,7 +751,9 @@ public class Science_jd extends AppCompatActivity {
                     test1[11].setVisibility(View.VISIBLE);
                     exam[11].setVisibility(View.VISIBLE);
                     kabyle_layout.setVisibility(View.VISIBLE);
+                    kabyle_layout2.setVisibility(View.VISIBLE);
                     kabyle_checkbox.setChecked(true);
+
                 } else {
 
                     editor.putBoolean("kabyle", false);
@@ -748,6 +764,7 @@ public class Science_jd extends AppCompatActivity {
                     test1[11].setVisibility(View.GONE);
                     exam[11].setVisibility(View.GONE);
                     kabyle_layout.setVisibility(View.GONE);
+                    kabyle_layout2.setVisibility(View.GONE);
                     kabyle_checkbox.setChecked(false);
                 }
 
@@ -771,6 +788,7 @@ public class Science_jd extends AppCompatActivity {
                     exam[10].setVisibility(View.VISIBLE);
 
                     sport_layout.setVisibility(View.VISIBLE);
+                    sport_layout2.setVisibility(View.VISIBLE);
                     sport_checkbox.setChecked(true);
                 } else {
 
@@ -782,6 +800,7 @@ public class Science_jd extends AppCompatActivity {
                     test1[10].setVisibility(View.GONE);
                     exam[10].setVisibility(View.GONE);
                     sport_layout.setVisibility(View.GONE);
+                    sport_layout2.setVisibility(View.GONE);
                     sport_checkbox.setChecked(false);
                 }
 
@@ -940,12 +959,6 @@ public class Science_jd extends AppCompatActivity {
 
 
 
-        AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Science_jd.this,R.style.CustomAlertDialog);
-        ViewGroup viewGroup2 = findViewById(android.R.id.content);
-        View dialogView2 = LayoutInflater.from(Science_jd.this).inflate(R.layout.repport_science_jd, viewGroup2, false);
-        Button buttonOk2 =dialogView2.findViewById(R.id.ok);
-        alertBuilder2.setView(dialogView2);
-        AlertDialog alerdialog2 = alertBuilder2.create();
 
         TextView[] avrgs_show = new TextView[12];
         avrgs_show[0] = dialogView2.findViewById(R.id.arabic_avrg);
@@ -961,9 +974,6 @@ public class Science_jd extends AppCompatActivity {
         avrgs_show[10] = dialogView2.findViewById(R.id.sport_avrg);
         avrgs_show[11] = dialogView2.findViewById(R.id.kabyle_avrg);
 
-        LinearLayout philo_layout2 = dialogView2.findViewById(R.id.philo_layout);
-        LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
-        LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
 
         philo_layout2.setVisibility(View.GONE);
 
@@ -1001,7 +1011,7 @@ public class Science_jd extends AppCompatActivity {
                         int finalI = i;
 
 
-                        if (!exam[finalI].getText().toString().isEmpty()) {
+                        if (!exam[finalI].getText().toString().isEmpty() && !exam[finalI].getText().toString().equals(".")) {
                             if (Double.valueOf(exam[finalI].getText().toString()) > 20 || Double.valueOf(exam[finalI].getText().toString()) < 0) {
                                 exam[finalI].setTextColor(getResources().getColor(R.color.red));
                                 exam[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -1015,7 +1025,7 @@ public class Science_jd extends AppCompatActivity {
                         if(checkboxs[i].isChecked()){
 
 
-                            if (!test2[finalI].getText().toString().isEmpty()) {
+                            if (!test2[finalI].getText().toString().isEmpty() && !test2[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(test2[finalI].getText().toString()) > 20 || Double.valueOf(test2[finalI].getText().toString()) < 0) {
                                     test2[finalI].setTextColor(getResources().getColor(R.color.red));
                                     test2[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -1030,7 +1040,7 @@ public class Science_jd extends AppCompatActivity {
 
                         }
 
-                        if (!test1[finalI].getText().toString().isEmpty()) {
+                        if (!test1[finalI].getText().toString().isEmpty() && !test1[finalI].getText().toString().equals(".")) {
                             if (Double.valueOf(test1[finalI].getText().toString()) > 20 || Double.valueOf(test1[finalI].getText().toString()) < 0) {
                                 test1[finalI].setTextColor(getResources().getColor(R.color.red));
                                 test1[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -1043,7 +1053,7 @@ public class Science_jd extends AppCompatActivity {
 
                         if (application[i] != null) {
 
-                            if (!application[finalI].getText().toString().isEmpty()) {
+                            if (!application[finalI].getText().toString().isEmpty() && !application[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(application[finalI].getText().toString()) > 20 || Double.valueOf(application[finalI].getText().toString()) < 0) {
                                     application[finalI].setTextColor(getResources().getColor(R.color.red));
                                     application[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -1056,7 +1066,7 @@ public class Science_jd extends AppCompatActivity {
 
                         }
 
-                        if (!ta9wim[finalI].getText().toString().isEmpty()) {
+                        if (!ta9wim[finalI].getText().toString().isEmpty() && !ta9wim[finalI].getText().toString().equals(".")) {
                             if (Double.valueOf(ta9wim[finalI].getText().toString()) > 20 || Double.valueOf(ta9wim[finalI].getText().toString()) < 0) {
                                 ta9wim[finalI].setTextColor(getResources().getColor(R.color.red));
                                 ta9wim[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -1082,7 +1092,7 @@ public class Science_jd extends AppCompatActivity {
 
                     if(sport_checkbox.isChecked()){
 
-                        if (!exam[Subjects - 2].getText().toString().isEmpty()) {
+                        if (!exam[Subjects - 2].getText().toString().isEmpty() && !exam[Subjects - 2].getText().toString().equals(".")) {
                             if (Double.valueOf(exam[Subjects - 2].getText().toString()) > 20 || Double.valueOf(exam[Subjects - 2].getText().toString()) < 0) {
                                 exam[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                 exam[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1095,7 +1105,7 @@ public class Science_jd extends AppCompatActivity {
                         if(checkboxs[Subjects - 2].isChecked()){
 
 
-                            if (!test2[Subjects - 2].getText().toString().isEmpty()) {
+                            if (!test2[Subjects - 2].getText().toString().isEmpty() && !test2[Subjects - 2].getText().toString().equals(".")) {
                                 if (Double.valueOf(test2[Subjects - 2].getText().toString()) > 20 || Double.valueOf(test2[Subjects - 2].getText().toString()) < 0) {
                                     test2[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                     test2[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1109,7 +1119,7 @@ public class Science_jd extends AppCompatActivity {
 
                         }
 
-                        if (!test1[Subjects - 2].getText().toString().isEmpty()) {
+                        if (!test1[Subjects - 2].getText().toString().isEmpty() && !test1[Subjects - 2].getText().toString().equals(".")) {
                             if (Double.valueOf(test1[Subjects - 2].getText().toString()) > 20 || Double.valueOf(test1[Subjects - 2].getText().toString()) < 0) {
                                 test1[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                 test1[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1121,7 +1131,7 @@ public class Science_jd extends AppCompatActivity {
 
                         if (application[Subjects - 2] != null) {
 
-                            if (!application[Subjects - 2].getText().toString().isEmpty()) {
+                            if (!application[Subjects - 2].getText().toString().isEmpty() && !application[Subjects - 2].getText().toString().equals(".")) {
                                 if (Double.valueOf(application[Subjects - 2].getText().toString()) > 20 || Double.valueOf(application[Subjects - 2].getText().toString()) < 0) {
                                     application[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                     application[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1133,7 +1143,7 @@ public class Science_jd extends AppCompatActivity {
 
                         }
 
-                        if (!ta9wim[Subjects - 2].getText().toString().isEmpty()) {
+                        if (!ta9wim[Subjects - 2].getText().toString().isEmpty() && !ta9wim[Subjects - 2].getText().toString().equals(".")) {
                             if (Double.valueOf(ta9wim[Subjects - 2].getText().toString()) > 20 || Double.valueOf(ta9wim[Subjects - 2].getText().toString()) < 0) {
                                 ta9wim[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                 ta9wim[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1150,7 +1160,7 @@ public class Science_jd extends AppCompatActivity {
 
                     if(kabyle_checkbox.isChecked()){
 
-                        if (!exam[Subjects - 1].getText().toString().isEmpty()) {
+                        if (!exam[Subjects - 1].getText().toString().isEmpty() && !exam[Subjects - 1].getText().toString().equals(".")) {
                             if (Double.valueOf(exam[Subjects - 1].getText().toString()) > 20 || Double.valueOf(exam[Subjects - 1].getText().toString()) < 0) {
                                 exam[Subjects - 1].setTextColor(getResources().getColor(R.color.red));
                                 exam[Subjects - 1].setBackgroundResource(R.drawable.button_border_red);

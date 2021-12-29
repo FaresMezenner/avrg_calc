@@ -118,6 +118,17 @@ public class Am3 extends AppCompatActivity {
 
 
 
+        AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Am3.this,R.style.CustomAlertDialog);
+        ViewGroup viewGroup2 = findViewById(android.R.id.content);
+        View dialogView2 = LayoutInflater.from(Am3.this).inflate(R.layout.repport_cem, viewGroup2, false);
+        Button buttonOk2 =dialogView2.findViewById(R.id.ok);
+        alertBuilder2.setView(dialogView2);
+        AlertDialog alerdialog2 = alertBuilder2.create();
+
+        LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
+        LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
+        LinearLayout art_layout2 = dialogView2.findViewById(R.id.art_layout);
+        LinearLayout music_layout2 = dialogView2.findViewById(R.id.music_layout);
 
 
         TextView kabyle = findViewById(R.id.kabyle);
@@ -559,6 +570,7 @@ public class Am3 extends AppCompatActivity {
             kabyle_ta9wim.setVisibility(View.VISIBLE);
             kabyle_test1.setVisibility(View.VISIBLE);
             kabyle_layout.setVisibility(View.VISIBLE);
+            kabyle_layout2.setVisibility(View.VISIBLE);
             kabyle_exam.setVisibility(View.VISIBLE);
             kabyle_checkbox.setChecked(true);
         } else {
@@ -568,6 +580,7 @@ public class Am3 extends AppCompatActivity {
             kabyle_test1.setVisibility(View.GONE);
             kabyle_exam.setVisibility(View.GONE);
             kabyle_layout.setVisibility(View.GONE);
+            kabyle_layout2.setVisibility(View.GONE);
             kabyle_checkbox.setChecked(false);
         }
 
@@ -580,6 +593,7 @@ public class Am3 extends AppCompatActivity {
             sport_test1.setVisibility(View.VISIBLE);
             sport_exam.setVisibility(View.VISIBLE);
             sport_layout.setVisibility(View.VISIBLE);
+            sport_layout2.setVisibility(View.VISIBLE);
             sport_checkbox.setChecked(true);
         } else {
             sport.setVisibility(View.GONE);
@@ -588,6 +602,7 @@ public class Am3 extends AppCompatActivity {
             sport_test1.setVisibility(View.GONE);
             sport_exam.setVisibility(View.GONE);
             sport_layout.setVisibility(View.GONE);
+            sport_layout2.setVisibility(View.GONE);
             sport_checkbox.setChecked(false);
         }
 
@@ -599,6 +614,7 @@ public class Am3 extends AppCompatActivity {
             art_test1.setVisibility(View.VISIBLE);
             art_exam.setVisibility(View.VISIBLE);
             art_layout.setVisibility(View.VISIBLE);
+            art_layout2.setVisibility(View.VISIBLE);
             art_checkbox.setChecked(true);
         } else {
             art.setVisibility(View.GONE);
@@ -607,6 +623,7 @@ public class Am3 extends AppCompatActivity {
             art_test1.setVisibility(View.GONE);
             art_exam.setVisibility(View.GONE);
             art_layout.setVisibility(View.GONE);
+            art_layout2.setVisibility(View.GONE);
             art_checkbox.setChecked(false);
         }
 
@@ -619,6 +636,7 @@ public class Am3 extends AppCompatActivity {
             music_test1.setVisibility(View.VISIBLE);
             music_exam.setVisibility(View.VISIBLE);
             music_layout.setVisibility(View.VISIBLE);
+            music_layout2.setVisibility(View.VISIBLE);
             music_checkbox.setChecked(true);
         } else {
             music.setVisibility(View.GONE);
@@ -627,6 +645,7 @@ public class Am3 extends AppCompatActivity {
             music_test1.setVisibility(View.GONE);
             music_exam.setVisibility(View.GONE);
             music_layout.setVisibility(View.GONE);
+            music_layout2.setVisibility(View.GONE);
             music_checkbox.setChecked(false);
         }
         for(int i = 0; i<checkboxs.length; i++){
@@ -660,6 +679,7 @@ public class Am3 extends AppCompatActivity {
                     kabyle_test1.setVisibility(View.VISIBLE);
                     kabyle_exam.setVisibility(View.VISIBLE);
                     kabyle_layout.setVisibility(View.VISIBLE);
+                    kabyle_layout2.setVisibility(View.VISIBLE);
                     kabyle_checkbox.setChecked(true);
                 } else {
 
@@ -670,6 +690,7 @@ public class Am3 extends AppCompatActivity {
                     kabyle_test1.setVisibility(View.GONE);
                     kabyle_exam.setVisibility(View.GONE);
                     kabyle_layout.setVisibility(View.GONE);
+                    kabyle_layout2.setVisibility(View.GONE);
                     kabyle_checkbox.setChecked(false);
                 }
 
@@ -692,6 +713,7 @@ public class Am3 extends AppCompatActivity {
                     sport_exam.setVisibility(View.VISIBLE);
 
                     sport_layout.setVisibility(View.VISIBLE);
+                    sport_layout2.setVisibility(View.VISIBLE);
                     sport_checkbox.setChecked(true);
                 } else {
 
@@ -702,6 +724,7 @@ public class Am3 extends AppCompatActivity {
                     sport_test1.setVisibility(View.GONE);
                     sport_exam.setVisibility(View.GONE);
                     sport_layout.setVisibility(View.GONE);
+                    sport_layout2.setVisibility(View.GONE);
                     sport_checkbox.setChecked(false);
                 }
 
@@ -724,6 +747,7 @@ public class Am3 extends AppCompatActivity {
                     art_exam.setVisibility(View.VISIBLE);
 
                     art_layout.setVisibility(View.VISIBLE);
+                    art_layout2.setVisibility(View.VISIBLE);
                     art_checkbox.setChecked(true);
                 } else {
 
@@ -734,6 +758,7 @@ public class Am3 extends AppCompatActivity {
                     art_test1.setVisibility(View.GONE);
                     art_exam.setVisibility(View.GONE);
                     art_layout.setVisibility(View.GONE);
+                    art_layout2.setVisibility(View.GONE);
                     art_checkbox.setChecked(false);
                 }
 
@@ -756,6 +781,7 @@ public class Am3 extends AppCompatActivity {
 
                     music_layout.setVisibility(View.VISIBLE);
                     music_checkbox.setChecked(true);
+                    music_layout2.setVisibility(View.VISIBLE);
                 } else {
 
                     editor.putBoolean("music", false);
@@ -765,6 +791,7 @@ public class Am3 extends AppCompatActivity {
                     music_test1.setVisibility(View.GONE);
                     music_exam.setVisibility(View.GONE);
                     music_layout.setVisibility(View.GONE);
+                    music_layout2.setVisibility(View.GONE);
                     music_checkbox.setChecked(false);
                 }
 
@@ -956,13 +983,6 @@ public class Am3 extends AppCompatActivity {
         });
 
 
-        AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Am3.this,R.style.CustomAlertDialog);
-        ViewGroup viewGroup2 = findViewById(android.R.id.content);
-        View dialogView2 = LayoutInflater.from(Am3.this).inflate(R.layout.repport_cem, viewGroup2, false);
-        Button buttonOk2 =dialogView2.findViewById(R.id.ok);
-        alertBuilder2.setView(dialogView2);
-        AlertDialog alerdialog2 = alertBuilder2.create();
-
         TextView[] avrgs_show = new TextView[14];
         avrgs_show[0] = dialogView2.findViewById(R.id.arabic_avrg);
         avrgs_show[1] = dialogView2.findViewById(R.id.math_avrg);
@@ -980,11 +1000,6 @@ public class Am3 extends AppCompatActivity {
         avrgs_show[13] = dialogView2.findViewById(R.id.kabyle_avrg);
 
 
-        LinearLayout philo_layout2 = dialogView2.findViewById(R.id.philo_layout);
-        LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
-        LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
-        LinearLayout art_layout2 = dialogView2.findViewById(R.id.art_layout);
-        LinearLayout music_layout2 = dialogView2.findViewById(R.id.music_layout);
 
 
 
@@ -1422,43 +1437,41 @@ public class Am3 extends AppCompatActivity {
                     coefficients[12] = 1;
                     coefficients[13] = 2;
 
-
                     if (!kabyle_checkbox.isChecked()) {
-                        coefficients[12] = 0;
-                        ta9wim[12].setText("0");
-                        test1[12].setText("0");
-                        test2[12].setText("0");
-                        exam[12].setText("0");
+                        coefficients[13] = 0;
+                        ta9wim[13].setText("0");
+                        test1[13].setText("0");
+                        test2[13].setText("0");
+                        exam[13].setText("0");
                         kabyle_layout2.setVisibility(View.GONE);
                     }
 
                     if (!sport_checkbox.isChecked()) {
-                        coefficients[9] = 0;
-                        ta9wim[9].setText("0");
-                        test1[9].setText("0");
-                        test2[9].setText("0");
-                        exam[9].setText("0");
-                        sport_layout2.setVisibility(View.GONE);
-                    }
-
-                    if (!art_checkbox.isChecked()) {
                         coefficients[10] = 0;
                         ta9wim[10].setText("0");
                         test1[10].setText("0");
                         test2[10].setText("0");
                         exam[10].setText("0");
-                        art_layout2.setVisibility(View.GONE);
+                        sport_layout2.setVisibility(View.GONE);
                     }
 
-                    if (!music_checkbox.isChecked()) {
+                    if (!art_checkbox.isChecked()) {
                         coefficients[11] = 0;
                         ta9wim[11].setText("0");
                         test1[11].setText("0");
                         test2[11].setText("0");
                         exam[11].setText("0");
-                        music_layout2.setVisibility(View.GONE);
+                        art_layout2.setVisibility(View.GONE);
                     }
 
+                    if (!music_checkbox.isChecked()) {
+                        coefficients[12] = 0;
+                        ta9wim[12].setText("0");
+                        test1[12].setText("0");
+                        test2[12].setText("0");
+                        exam[12].setText("0");
+                        music_layout2.setVisibility(View.GONE);
+                    }
 
                     EditText[][] notes = new EditText[SUBJECTS][4];
 

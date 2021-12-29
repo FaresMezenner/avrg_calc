@@ -1689,7 +1689,7 @@
             <TextView
 
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="25dp"
                 android:layout_below="@id/exams"
                 android:layout_alignLeft="@id/coefficient2"
                 android:layout_alignRight="@id/subject2"
@@ -1721,7 +1721,8 @@
             <TextView
 
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="25dp"
+                android:text="تثمين المطالعة"
                 android:layout_below="@id/projects"
                 android:layout_alignLeft="@id/coefficient2"
                 android:layout_alignRight="@id/subject2"
@@ -1729,7 +1730,6 @@
                 android:background="@drawable/button_filled2"
                 android:fontFamily="@font/almarai_regular"
                 android:gravity="center"
-                android:text="تثمين المشاريع"
                 android:textColor="@color/white"
                 android:textSize="12sp"></TextView>
 

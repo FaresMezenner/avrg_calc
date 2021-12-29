@@ -48,24 +48,9 @@
             android:drawableTint="@android:color/holo_blue_dark"
             android:fontFamily="@font/script_soft_normal"
             android:gravity="center"
-            android:text="tech.torch"
+            android:text="tech._.torch"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="40sp"></TextView>
-
-
-        <TextView
-            android:id="@+id/face"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:textColor="@android:color/holo_blue_dark"
-            android:fontFamily="@font/script_soft_normal"
-            android:text="Tech Torch"
-            android:gravity="center"
-            android:drawableLeft="@drawable/facebook"
-            android:drawableTint="@android:color/holo_blue_dark"
-            ></TextView>
 
 
         <TextView

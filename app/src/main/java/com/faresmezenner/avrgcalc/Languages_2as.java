@@ -114,7 +114,17 @@ public class Languages_2as extends AppCompatActivity {
 
 
 
+       AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Languages_2as.this,R.style.CustomAlertDialog);
+       ViewGroup viewGroup2 = findViewById(android.R.id.content);
+       View dialogView2 = LayoutInflater.from(Languages_2as.this).inflate(R.layout.repport_languages, viewGroup2, false);
+       Button buttonOk2 =dialogView2.findViewById(R.id.ok);
+       alertBuilder2.setView(dialogView2);
+       AlertDialog alerdialog2 = alertBuilder2.create();
 
+       LinearLayout philo_layout2 = dialogView2.findViewById(R.id.philo_layout);
+
+       LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
+       LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
 
         TextView kabyle = findViewById(R.id.kabyle);
         TextView kabyle_coefficient = findViewById(R.id.coefficient_kabyle);
@@ -616,6 +626,7 @@ public class Languages_2as extends AppCompatActivity {
             kabyle_application.setVisibility(View.VISIBLE);
             kabyle_test1.setVisibility(View.VISIBLE);
             kabyle_layout.setVisibility(View.VISIBLE);
+            kabyle_layout2.setVisibility(View.VISIBLE);
             kabyle_exam.setVisibility(View.VISIBLE);
             kabyle_checkbox.setChecked(true);
         } else {
@@ -626,6 +637,7 @@ public class Languages_2as extends AppCompatActivity {
             kabyle_test1.setVisibility(View.GONE);
             kabyle_exam.setVisibility(View.GONE);
             kabyle_layout.setVisibility(View.GONE);
+            kabyle_layout2.setVisibility(View.GONE);
             kabyle_checkbox.setChecked(false);
         }
 
@@ -639,6 +651,7 @@ public class Languages_2as extends AppCompatActivity {
             sport_test1.setVisibility(View.VISIBLE);
             sport_exam.setVisibility(View.VISIBLE);
             sport_layout.setVisibility(View.VISIBLE);
+            sport_layout2.setVisibility(View.VISIBLE);
             sport_checkbox.setChecked(true);
         } else {
             sport.setVisibility(View.GONE);
@@ -648,6 +661,7 @@ public class Languages_2as extends AppCompatActivity {
             sport_test1.setVisibility(View.GONE);
             sport_exam.setVisibility(View.GONE);
             sport_layout.setVisibility(View.GONE);
+            sport_layout2.setVisibility(View.GONE);
             sport_checkbox.setChecked(false);
         }
 
@@ -690,6 +704,7 @@ public class Languages_2as extends AppCompatActivity {
                     kabyle_test1.setVisibility(View.VISIBLE);
                     kabyle_exam.setVisibility(View.VISIBLE);
                     kabyle_layout.setVisibility(View.VISIBLE);
+                    kabyle_layout2.setVisibility(View.VISIBLE);
                     kabyle_checkbox.setChecked(true);
                 } else {
 
@@ -701,6 +716,7 @@ public class Languages_2as extends AppCompatActivity {
                     kabyle_test1.setVisibility(View.GONE);
                     kabyle_exam.setVisibility(View.GONE);
                     kabyle_layout.setVisibility(View.GONE);
+                    kabyle_layout2.setVisibility(View.GONE);
                     kabyle_checkbox.setChecked(false);
                 }
 
@@ -724,6 +740,7 @@ public class Languages_2as extends AppCompatActivity {
                     sport_exam.setVisibility(View.VISIBLE);
 
                     sport_layout.setVisibility(View.VISIBLE);
+                    sport_layout2.setVisibility(View.VISIBLE);
                     sport_checkbox.setChecked(true);
                 } else {
 
@@ -735,6 +752,7 @@ public class Languages_2as extends AppCompatActivity {
                     sport_test1.setVisibility(View.GONE);
                     sport_exam.setVisibility(View.GONE);
                     sport_layout.setVisibility(View.GONE);
+                    sport_layout2.setVisibility(View.GONE);
                     sport_checkbox.setChecked(false);
                 }
 
@@ -853,12 +871,6 @@ public class Languages_2as extends AppCompatActivity {
         });
 
 
-        AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Languages_2as.this,R.style.CustomAlertDialog);
-        ViewGroup viewGroup2 = findViewById(android.R.id.content);
-        View dialogView2 = LayoutInflater.from(Languages_2as.this).inflate(R.layout.repport_languages, viewGroup2, false);
-        Button buttonOk2 =dialogView2.findViewById(R.id.ok);
-        alertBuilder2.setView(dialogView2);
-        AlertDialog alerdialog2 = alertBuilder2.create();
 
         TextView[] avrgs_show = new TextView[9];
         avrgs_show[0] = dialogView2.findViewById(R.id.arabic_avrg);
@@ -871,10 +883,6 @@ public class Languages_2as extends AppCompatActivity {
         avrgs_show[7] = dialogView2.findViewById(R.id.sport_avrg);
         avrgs_show[8] = dialogView2.findViewById(R.id.kabyle_avrg);
 
-        LinearLayout philo_layout2 = dialogView2.findViewById(R.id.philo_layout);
-
-        LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
-        LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
 
         philo_layout2.setVisibility(View.GONE);
 

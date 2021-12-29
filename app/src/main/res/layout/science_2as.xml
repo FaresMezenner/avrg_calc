@@ -6,14 +6,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:layout_alignParentTop="true"
-        android:background="@android:color/holo_blue_dark"
         android:id="@+id/year_title"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
         android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
         android:text="السنة الثانية ثانوي"
         android:textColor="@color/white"
         android:textSize="25sp"></TextView>
@@ -31,6 +31,16 @@
         android:paddingBottom="1dp"
         android:text="شعبة علوم تجريبية"
         android:textColor="@color/white"></TextView>
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/year_title"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back"></ImageView>
 
 
 
@@ -1627,7 +1637,8 @@
             <TextView
 
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="25dp"
+                android:text="تثمين المطالعة"
                 android:layout_below="@id/exams"
                 android:layout_alignLeft="@id/coefficient2"
                 android:layout_alignRight="@id/subject2"
@@ -1635,7 +1646,6 @@
                 android:background="@drawable/button_filled2"
                 android:fontFamily="@font/almarai_regular"
                 android:gravity="center"
-                android:text="تثمين المشاريع"
                 android:textColor="@color/white"
                 android:textSize="12sp"></TextView>
 

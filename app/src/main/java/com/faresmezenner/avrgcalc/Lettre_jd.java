@@ -114,6 +114,16 @@ public class Lettre_jd extends AppCompatActivity {
 
 
 
+        AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Lettre_jd.this,R.style.CustomAlertDialog);
+        ViewGroup viewGroup2 = findViewById(android.R.id.content);
+        View dialogView2 = LayoutInflater.from(Lettre_jd.this).inflate(R.layout.repport_lettre_jd, viewGroup2, false);
+        Button buttonOk2 =dialogView2.findViewById(R.id.ok);
+        alertBuilder2.setView(dialogView2);
+        AlertDialog alerdialog2 = alertBuilder2.create();
+
+        LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
+        LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
+
 
 
         TextView kabyle = findViewById(R.id.kabyle);
@@ -215,7 +225,7 @@ public class Lettre_jd extends AppCompatActivity {
         application[7] = findViewById(R.id.application_english);
         application[8] = findViewById(R.id.application_informatique);
         application[9] = null;
-        application[10] = findViewById(R.id.test2_kabyle);
+        application[10] = null;
 
 
         ta9wim[0] = findViewById(R.id.ta9wim_arabic);
@@ -644,6 +654,7 @@ public class Lettre_jd extends AppCompatActivity {
             kabyle_application.setVisibility(View.VISIBLE);
             kabyle_test1.setVisibility(View.VISIBLE);
             kabyle_layout.setVisibility(View.VISIBLE);
+            kabyle_layout2.setVisibility(View.VISIBLE);
             kabyle_exam.setVisibility(View.VISIBLE);
             kabyle_checkbox.setChecked(true);
         } else {
@@ -654,6 +665,7 @@ public class Lettre_jd extends AppCompatActivity {
             kabyle_test1.setVisibility(View.GONE);
             kabyle_exam.setVisibility(View.GONE);
             kabyle_layout.setVisibility(View.GONE);
+            kabyle_layout2.setVisibility(View.GONE);
             kabyle_checkbox.setChecked(false);
         }
 
@@ -667,6 +679,7 @@ public class Lettre_jd extends AppCompatActivity {
             sport_test1.setVisibility(View.VISIBLE);
             sport_exam.setVisibility(View.VISIBLE);
             sport_layout.setVisibility(View.VISIBLE);
+            sport_layout2.setVisibility(View.VISIBLE);
             sport_checkbox.setChecked(true);
         } else {
             sport.setVisibility(View.GONE);
@@ -676,6 +689,7 @@ public class Lettre_jd extends AppCompatActivity {
             sport_test1.setVisibility(View.GONE);
             sport_exam.setVisibility(View.GONE);
             sport_layout.setVisibility(View.GONE);
+            sport_layout2.setVisibility(View.GONE);
             sport_checkbox.setChecked(false);
         }
 
@@ -717,6 +731,7 @@ public class Lettre_jd extends AppCompatActivity {
                     kabyle_test1.setVisibility(View.VISIBLE);
                     kabyle_exam.setVisibility(View.VISIBLE);
                     kabyle_layout.setVisibility(View.VISIBLE);
+                    kabyle_layout2.setVisibility(View.VISIBLE);
                     kabyle_checkbox.setChecked(true);
                 } else {
 
@@ -728,6 +743,7 @@ public class Lettre_jd extends AppCompatActivity {
                     kabyle_test1.setVisibility(View.GONE);
                     kabyle_exam.setVisibility(View.GONE);
                     kabyle_layout.setVisibility(View.GONE);
+                    kabyle_layout2.setVisibility(View.GONE);
                     kabyle_checkbox.setChecked(false);
                 }
 
@@ -751,6 +767,7 @@ public class Lettre_jd extends AppCompatActivity {
                     sport_exam.setVisibility(View.VISIBLE);
 
                     sport_layout.setVisibility(View.VISIBLE);
+                    sport_layout2.setVisibility(View.VISIBLE);
                     sport_checkbox.setChecked(true);
                 } else {
 
@@ -762,6 +779,7 @@ public class Lettre_jd extends AppCompatActivity {
                     sport_test1.setVisibility(View.GONE);
                     sport_exam.setVisibility(View.GONE);
                     sport_layout.setVisibility(View.GONE);
+                    sport_layout2.setVisibility(View.GONE);
                     sport_checkbox.setChecked(false);
                 }
 
@@ -909,13 +927,6 @@ public class Lettre_jd extends AppCompatActivity {
 
 
 
-        AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(Lettre_jd.this,R.style.CustomAlertDialog);
-        ViewGroup viewGroup2 = findViewById(android.R.id.content);
-        View dialogView2 = LayoutInflater.from(Lettre_jd.this).inflate(R.layout.repport_lettre_jd, viewGroup2, false);
-        Button buttonOk2 =dialogView2.findViewById(R.id.ok);
-        alertBuilder2.setView(dialogView2);
-        AlertDialog alerdialog2 = alertBuilder2.create();
-
         TextView[] avrgs_show = new TextView[11];
         avrgs_show[0] = dialogView2.findViewById(R.id.arabic_avrg);
         avrgs_show[1] = dialogView2.findViewById(R.id.math_avrg);
@@ -929,8 +940,6 @@ public class Lettre_jd extends AppCompatActivity {
         avrgs_show[9] = dialogView2.findViewById(R.id.sport_avrg);
         avrgs_show[10] = dialogView2.findViewById(R.id.kabyle_avrg);
 
-        LinearLayout sport_layout2 = dialogView2.findViewById(R.id.sport_layout);
-        LinearLayout kabyle_layout2 = dialogView2.findViewById(R.id.kabyle_layout);
 
         TextView total_avrg = dialogView2.findViewById(R.id.total_avrg);
 
