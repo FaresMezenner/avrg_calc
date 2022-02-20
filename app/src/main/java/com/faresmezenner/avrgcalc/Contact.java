@@ -54,7 +54,7 @@ public class Contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto","email@email.com", null));
+                        "mailto","tech.torch.cs@gmail.com", null));
                 intent.putExtra(Intent.EXTRA_SUBJECT, "");
                 startActivity(Intent.createChooser(intent, "Choose an Email client :"));
 
