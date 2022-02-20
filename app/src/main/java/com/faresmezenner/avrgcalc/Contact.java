@@ -37,7 +37,7 @@ public class Contact extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Uri uri = Uri.parse("http://instagram.com/_u/fares_mezenner");
+                Uri uri = Uri.parse("https://www.instagram.com/tech._.torch/");
                 Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
                 likeIng.setPackage("com.instagram.android");
@@ -46,8 +46,18 @@ public class Contact extends AppCompatActivity {
                     startActivity(likeIng);
                 } catch (ActivityNotFoundException e) {
                     startActivity(new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("http://instagram.com/fares_mezenner")));
+                            Uri.parse("https://www.instagram.com/tech._.torch/")));
                 }
+            }
+        });
+        textViews[1].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                        "mailto","email@email.com", null));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "");
+                startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+
             }
         });
 

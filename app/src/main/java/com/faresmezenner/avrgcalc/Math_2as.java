@@ -1230,9 +1230,9 @@ public class Math_2as extends AppCompatActivity {
                     double[] avrgs = new double[SUBJECTS];
                     int[] coefficients = new int[10];
                     coefficients[0] = 2;
-                    coefficients[1] = 5;
-                    coefficients[2] = 5;
-                    coefficients[3] = 6;
+                    coefficients[1] = 7;
+                    coefficients[2] = 6;
+                    coefficients[3] = 2;
                     coefficients[4] = 2;
                     coefficients[5] = 2;
                     coefficients[6] = 2;

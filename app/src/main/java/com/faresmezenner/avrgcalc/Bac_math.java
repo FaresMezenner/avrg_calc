@@ -149,7 +149,7 @@ public class Bac_math extends AppCompatActivity {
                 for(int i  = 0; i<SUBJECTS; i++){
 
                     String key = "note" + i;
-                    if(!hasFocus && !note[i].getText().toString().isEmpty()){
+                    if(!hasFocus && !note[i].getText().toString().isEmpty() && !note[i].getText().toString().equals(".")){
                         if (Double.valueOf(note[i].getText().toString()) > 20 || Double.valueOf(note[i].getText().toString()) < 0) {
                             note[i].setTextColor(getResources().getColor(R.color.red));
                             note[i].setBackgroundResource(R.drawable.button_border_red);
@@ -322,7 +322,7 @@ public class Bac_math extends AppCompatActivity {
 
                 for(int i = 0; i<SUBJECTS-2; i++){
 
-                    if (!note[i].getText().toString().isEmpty()) {
+                    if (!note[i].getText().toString().isEmpty() && !note[i].getText().toString().equals(".")) {
                         if (Double.valueOf(note[i].getText().toString()) > 20 || Double.valueOf(note[i].getText().toString()) < 0) {
                             note[i].setTextColor(getResources().getColor(R.color.red));
                             note[i].setBackgroundResource(R.drawable.button_border_red);
@@ -336,7 +336,7 @@ public class Bac_math extends AppCompatActivity {
 
                 if(sport_checkbox.isChecked()){
 
-                    if (!note[SUBJECTS-2].getText().toString().isEmpty()) {
+                    if (!note[SUBJECTS-2].getText().toString().isEmpty() && !note[SUBJECTS-2].getText().toString().equals(".")) {
                         if (Double.valueOf(note[SUBJECTS-2].getText().toString()) > 20 || Double.valueOf(note[SUBJECTS-2].getText().toString()) < 0) {
                             note[SUBJECTS-2].setTextColor(getResources().getColor(R.color.red));
                             note[SUBJECTS-2].setBackgroundResource(R.drawable.button_border_red);
@@ -350,7 +350,7 @@ public class Bac_math extends AppCompatActivity {
 
                 if(kabyle_checkbox.isChecked()){
 
-                    if (!note[SUBJECTS-1].getText().toString().isEmpty()) {
+                    if (!note[SUBJECTS-1].getText().toString().isEmpty() && !note[SUBJECTS-1].getText().toString().equals(".")) {
                         if (Double.valueOf(note[SUBJECTS-1].getText().toString()) > 20 || Double.valueOf(note[SUBJECTS-1].getText().toString()) < 0) {
                             note[SUBJECTS-1].setTextColor(getResources().getColor(R.color.red));
                             note[SUBJECTS-1].setBackgroundResource(R.drawable.button_border_red);
@@ -367,10 +367,10 @@ public class Bac_math extends AppCompatActivity {
                 String kabyle_note = "";
 
 
-                if(!note[SUBJECTS-2].getText().toString().isEmpty()){
+                if(!note[SUBJECTS-2].getText().toString().isEmpty() && !note[SUBJECTS-2].getText().toString().equals(".")){
                     sport_note = String.valueOf(note[SUBJECTS-2].getText());
                 }
-                if(!note[SUBJECTS-1].getText().toString().isEmpty()){
+                if(!note[SUBJECTS-1].getText().toString().isEmpty() && !note[SUBJECTS-1].getText().toString().equals(".")){
                     kabyle_note = String.valueOf(note[SUBJECTS-1].getText());
                 }
 
@@ -410,7 +410,7 @@ public class Bac_math extends AppCompatActivity {
 
                     for (int i = 0; i < SUBJECTS; i++) {
 
-                        if ((TextUtils.isEmpty(note[i].getText().toString()))) {
+                        if ((TextUtils.isEmpty(note[i].getText().toString())) || note[i].getText().toString().equals(".")) {
                             success = false;
                             alerdialog.show();
                             break;

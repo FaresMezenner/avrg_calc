@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,7 +39,6 @@ public class Branchs extends AppCompatActivity {
 
         String action = getIntent().getStringExtra("year");
 
-        Log.d("yearrrrrrrrrrrrr:", action);
 
         Intent backIntent = new Intent(Branchs.this, MainActivity.class);
         Intent math_intent_3 = new Intent(getApplicationContext(), Math_3as.class);

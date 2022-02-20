@@ -114,8 +114,13 @@ public class First extends AppCompatActivity {
                 title.setText("سياسة الخصوصية");
                 webView.loadUrl("file:///android_asset/privacy.html");
                 alerdialog.show();
+                privacy_terms.setText(ss);
+                privacy_terms.setMovementMethod(LinkMovementMethod.getInstance());
 
             }
+
+
+
         };
 
         ClickableSpan terms = new ClickableSpan() {
@@ -125,6 +130,8 @@ public class First extends AppCompatActivity {
                 title.setText("شروط الإستخدام");
                 webView.loadUrl("file:///android_asset/terms.html");
                 alerdialog.show();
+                privacy_terms.setText(ss);
+                privacy_terms.setMovementMethod(LinkMovementMethod.getInstance());
             }
         };
 

@@ -16,7 +16,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6882017650263743~8676549916"/>
+            android:value="ca-app-pub-7783931967114342~9577878719"/>
 
 
         <activity
@@ -111,6 +111,10 @@
             android:exported="true" />
         <activity
             android:name=".First"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1107,7 +1107,7 @@ public class Lettre_2as extends AppCompatActivity {
 
                         }
 
-                        if (!ta9wim[Subjects - 2].getText().toString().isEmpty()) {
+                        if (!ta9wim[Subjects - 2].getText().toString().isEmpty() && !ta9wim[Subjects - 2].getText().toString().equals(".")) {
                             if (Double.valueOf(ta9wim[Subjects - 2].getText().toString()) > 20 || Double.valueOf(ta9wim[Subjects - 2].getText().toString()) < 0) {
                                 ta9wim[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                 ta9wim[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1163,7 +1163,7 @@ public class Lettre_2as extends AppCompatActivity {
 
                         if (application[Subjects - 1] != null) {
 
-                            if (!application[Subjects - 1].getText().toString().isEmpty()) {
+                            if (!application[Subjects - 1].getText().toString().isEmpty() && !application[Subjects - 1].getText().toString().equals(".")) {
                                 if (Double.valueOf(application[Subjects - 1].getText().toString()) > 20 || Double.valueOf(application[Subjects - 1].getText().toString()) < 0) {
                                     application[Subjects - 1].setTextColor(getResources().getColor(R.color.red));
                                     application[Subjects - 1].setBackgroundResource(R.drawable.button_border_red);

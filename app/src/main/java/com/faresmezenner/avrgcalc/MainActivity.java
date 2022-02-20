@@ -1,16 +1,19 @@
 package com.faresmezenner.avrgcalc;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +28,53 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        Button third_as = findViewById(R.id.three_as);
+        Button second_as = findViewById(R.id.second_as);
+        Button first_as = findViewById(R.id.first_as);
+
+        Button bac = findViewById(R.id.bac);
+        Button bem = findViewById(R.id.bem);
+
+        Button am4 = findViewById(R.id.foorth_am);
+        Button am3 = findViewById(R.id.third_am);
+        Button am2 = findViewById(R.id.second_am);
+        Button am1 = findViewById(R.id.first_am);
+
+        androidx.cardview.widget.CardView[] cardViews = new CardView[]{findViewById(R.id.third_as_cv),findViewById(R.id.second_as_cv),findViewById(R.id.first_as_cv),
+                                                                       findViewById(R.id.forth_am_cv),findViewById(R.id.third_am_cv),findViewById(R.id.second_am_cv),findViewById(R.id.first_am_cv),
+                                                                       findViewById(R.id.bac_cv),findViewById(R.id.bem_cv)};
+
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int width = displayMetrics.widthPixels;
+
+        Log.d("width", String.valueOf(width));
+
+        int margins = Integer.valueOf(width/36);
+        int b_width = Integer.valueOf((width - (width/27*2) - (margins*5))/2);
+        int b_height = Integer.valueOf(b_width/2);
+
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(b_width, b_height);
+
+        params.setMargins(margins,margins,margins,margins);
+
+        for (int i = 0; i<9; i++){
+
+            cardViews[i].setLayoutParams(params);
+
+        }
+
+
+
+
+
+
+
+
+
 
         ImageView back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -42,18 +92,6 @@ public class MainActivity extends AppCompatActivity {
         Intent am2_intent = new Intent(getApplicationContext(), Am2.class);
         Intent am1_intent = new Intent(getApplicationContext(), Am1.class);
 
-
-        Button third_as = findViewById(R.id.three_as);
-        Button second_as = findViewById(R.id.second_as);
-        Button first_as = findViewById(R.id.first_as);
-
-        Button bac = findViewById(R.id.bac);
-        Button bem = findViewById(R.id.bem);
-
-        Button am4 = findViewById(R.id.foorth_am);
-        Button am3 = findViewById(R.id.third_am);
-        Button am2 = findViewById(R.id.second_am);
-        Button am1 = findViewById(R.id.first_am);
 
 
 

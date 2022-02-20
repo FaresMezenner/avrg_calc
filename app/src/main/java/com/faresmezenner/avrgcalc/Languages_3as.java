@@ -230,7 +230,7 @@ public class Languages_3as extends AppCompatActivity {
         ta9wim[6] = findViewById(R.id.ta9wim_language);
         ta9wim[7] = findViewById(R.id.ta9wim_math);
         ta9wim[8] = findViewById(R.id.ta9wim_sport);
-        ta9wim[9] = findViewById(R.id.test2_kabyle);
+        ta9wim[9] = findViewById(R.id.ta9wim_kabyle);
 
 
         TextView sport = findViewById(R.id.sport);
@@ -267,7 +267,7 @@ public class Languages_3as extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !exam[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !exam[finalI].getText().toString().isEmpty() && !exam[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(exam[finalI].getText().toString()) > 20 || Double.valueOf(exam[finalI].getText().toString()) < 0) {
                                     exam[finalI].setTextColor(getResources().getColor(R.color.red));
                                     exam[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -299,7 +299,7 @@ public class Languages_3as extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !test2[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !test2[finalI].getText().toString().isEmpty() && !test2[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(test2[finalI].getText().toString()) > 20 || Double.valueOf(test2[finalI].getText().toString()) < 0) {
                                     test2[finalI].setTextColor(getResources().getColor(R.color.red));
                                     test2[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -333,7 +333,7 @@ public class Languages_3as extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !test1[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !test1[finalI].getText().toString().isEmpty() && !test1[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(test1[finalI].getText().toString()) > 20 || Double.valueOf(test1[finalI].getText().toString()) < 0) {
                                     test1[finalI].setTextColor(getResources().getColor(R.color.red));
                                     test1[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -369,7 +369,7 @@ public class Languages_3as extends AppCompatActivity {
                             @Override
                             public void onFocusChange(View v, boolean hasFocus) {
 
-                                if (!hasFocus && !application[finalI].getText().toString().isEmpty()) {
+                                if (!hasFocus && !application[finalI].getText().toString().isEmpty() && !application[finalI].getText().toString().equals(".")) {
                                     if (Double.valueOf(application[finalI].getText().toString()) > 20 || Double.valueOf(application[finalI].getText().toString()) < 0) {
                                         application[finalI].setTextColor(getResources().getColor(R.color.red));
                                         application[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -404,7 +404,7 @@ public class Languages_3as extends AppCompatActivity {
                         @Override
                         public void onFocusChange(View v, boolean hasFocus) {
 
-                            if (!hasFocus && !ta9wim[finalI].getText().toString().isEmpty()) {
+                            if (!hasFocus && !ta9wim[finalI].getText().toString().isEmpty() && !ta9wim[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(ta9wim[finalI].getText().toString()) > 20 || Double.valueOf(ta9wim[finalI].getText().toString()) < 0) {
                                     ta9wim[finalI].setTextColor(getResources().getColor(R.color.red));
                                     ta9wim[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -440,7 +440,7 @@ public class Languages_3as extends AppCompatActivity {
                     @Override
                     public void onFocusChange(View v, boolean hasFocus) {
 
-                        if (!hasFocus && !lasts[0].getText().toString().isEmpty()) {
+                        if (!hasFocus && !lasts[0].getText().toString().isEmpty() && !lasts[0].getText().toString().equals(".")) {
                             if (Double.valueOf(lasts[0].getText().toString()) > 20 || Double.valueOf(lasts[0].getText().toString()) < 0) {
                                 lasts[0].setTextColor(getResources().getColor(R.color.red));
                                 lasts[0].setBackgroundResource(R.drawable.button_border_red);
@@ -471,7 +471,7 @@ public class Languages_3as extends AppCompatActivity {
                     @Override
                     public void onFocusChange(View v, boolean hasFocus) {
 
-                        if (!hasFocus && !lasts[1].getText().toString().isEmpty()) {
+                        if (!hasFocus && !lasts[1].getText().toString().isEmpty() && !lasts[1].getText().toString().equals(".")) {
                             if (Double.valueOf(lasts[1].getText().toString()) > 20 || Double.valueOf(lasts[1].getText().toString()) < 0) {
                                 lasts[1].setTextColor(getResources().getColor(R.color.red));
                                 lasts[1].setBackgroundResource(R.drawable.button_border_red);
@@ -941,7 +941,7 @@ public class Languages_3as extends AppCompatActivity {
                         int finalI = i;
 
 
-                        if (!exam[finalI].getText().toString().isEmpty()) {
+                        if (!exam[finalI].getText().toString().isEmpty() && !exam[finalI].getText().toString().equals(".")) {
                             if (Double.valueOf(exam[finalI].getText().toString()) > 20 || Double.valueOf(exam[finalI].getText().toString()) < 0) {
                                 exam[finalI].setTextColor(getResources().getColor(R.color.red));
                                 exam[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -955,7 +955,7 @@ public class Languages_3as extends AppCompatActivity {
                         if(checkboxs[i].isChecked()){
 
 
-                            if (!test2[finalI].getText().toString().isEmpty()) {
+                            if (!test2[finalI].getText().toString().isEmpty() && !test2[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(test2[finalI].getText().toString()) > 20 || Double.valueOf(test2[finalI].getText().toString()) < 0) {
                                     test2[finalI].setTextColor(getResources().getColor(R.color.red));
                                     test2[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -970,7 +970,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         }
 
-                        if (!test1[finalI].getText().toString().isEmpty()) {
+                        if (!test1[finalI].getText().toString().isEmpty() && !test1[finalI].getText().toString().equals(".")) {
                             if (Double.valueOf(test1[finalI].getText().toString()) > 20 || Double.valueOf(test1[finalI].getText().toString()) < 0) {
                                 test1[finalI].setTextColor(getResources().getColor(R.color.red));
                                 test1[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -983,7 +983,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         if (application[i] != null) {
 
-                            if (!application[finalI].getText().toString().isEmpty()) {
+                            if (!application[finalI].getText().toString().isEmpty() && !application[finalI].getText().toString().equals(".")) {
                                 if (Double.valueOf(application[finalI].getText().toString()) > 20 || Double.valueOf(application[finalI].getText().toString()) < 0) {
                                     application[finalI].setTextColor(getResources().getColor(R.color.red));
                                     application[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -996,7 +996,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         }
 
-                        if (!ta9wim[finalI].getText().toString().isEmpty()) {
+                        if (!ta9wim[finalI].getText().toString().isEmpty() && !ta9wim[finalI].getText().toString().equals(".")) {
                             if (Double.valueOf(ta9wim[finalI].getText().toString()) > 20 || Double.valueOf(ta9wim[finalI].getText().toString()) < 0) {
                                 ta9wim[finalI].setTextColor(getResources().getColor(R.color.red));
                                 ta9wim[finalI].setBackgroundResource(R.drawable.button_border_red);
@@ -1022,7 +1022,7 @@ public class Languages_3as extends AppCompatActivity {
 
                     if(sport_checkbox.isChecked()){
 
-                        if (!exam[Subjects - 2].getText().toString().isEmpty()) {
+                        if (!exam[Subjects - 2].getText().toString().isEmpty() && !exam[Subjects - 2].getText().toString().equals(".")) {
                             if (Double.valueOf(exam[Subjects - 2].getText().toString()) > 20 || Double.valueOf(exam[Subjects - 2].getText().toString()) < 0) {
                                 exam[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                 exam[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1035,7 +1035,7 @@ public class Languages_3as extends AppCompatActivity {
                         if(checkboxs[Subjects - 2].isChecked()){
 
 
-                            if (!test2[Subjects - 2].getText().toString().isEmpty()) {
+                            if (!test2[Subjects - 2].getText().toString().isEmpty() && !test2[Subjects - 2].getText().toString().equals(".")) {
                                 if (Double.valueOf(test2[Subjects - 2].getText().toString()) > 20 || Double.valueOf(test2[Subjects - 2].getText().toString()) < 0) {
                                     test2[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                     test2[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1049,7 +1049,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         }
 
-                        if (!test1[Subjects - 2].getText().toString().isEmpty()) {
+                        if (!test1[Subjects - 2].getText().toString().isEmpty() && !test1[Subjects - 2].getText().toString().equals(".")) {
                             if (Double.valueOf(test1[Subjects - 2].getText().toString()) > 20 || Double.valueOf(test1[Subjects - 2].getText().toString()) < 0) {
                                 test1[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                 test1[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1061,7 +1061,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         if (application[Subjects - 2] != null) {
 
-                            if (!application[Subjects - 2].getText().toString().isEmpty()) {
+                            if (!application[Subjects - 2].getText().toString().isEmpty() && !application[Subjects - 2].getText().toString().equals(".")) {
                                 if (Double.valueOf(application[Subjects - 2].getText().toString()) > 20 || Double.valueOf(application[Subjects - 2].getText().toString()) < 0) {
                                     application[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                     application[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1073,7 +1073,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         }
 
-                        if (!ta9wim[Subjects - 2].getText().toString().isEmpty()) {
+                        if (!ta9wim[Subjects - 2].getText().toString().isEmpty() && !ta9wim[Subjects - 2].getText().toString().equals(".")) {
                             if (Double.valueOf(ta9wim[Subjects - 2].getText().toString()) > 20 || Double.valueOf(ta9wim[Subjects - 2].getText().toString()) < 0) {
                                 ta9wim[Subjects - 2].setTextColor(getResources().getColor(R.color.red));
                                 ta9wim[Subjects - 2].setBackgroundResource(R.drawable.button_border_red);
@@ -1090,7 +1090,7 @@ public class Languages_3as extends AppCompatActivity {
 
                     if(kabyle_checkbox.isChecked()){
 
-                        if (!exam[Subjects - 1].getText().toString().isEmpty()) {
+                        if (!exam[Subjects - 1].getText().toString().isEmpty() && !exam[Subjects - 1].getText().toString().equals(".")) {
                             if (Double.valueOf(exam[Subjects - 1].getText().toString()) > 20 || Double.valueOf(exam[Subjects - 1].getText().toString()) < 0) {
                                 exam[Subjects - 1].setTextColor(getResources().getColor(R.color.red));
                                 exam[Subjects - 1].setBackgroundResource(R.drawable.button_border_red);
@@ -1103,7 +1103,7 @@ public class Languages_3as extends AppCompatActivity {
                         if(checkboxs[Subjects - 1].isChecked()){
 
 
-                            if (!test2[Subjects - 1].getText().toString().isEmpty()) {
+                            if (!test2[Subjects - 1].getText().toString().isEmpty() && !test2[Subjects - 1].getText().toString().equals(".")) {
                                 if (Double.valueOf(test2[Subjects - 1].getText().toString()) > 20 || Double.valueOf(test2[Subjects - 1].getText().toString()) < 0) {
                                     test2[Subjects - 1].setTextColor(getResources().getColor(R.color.red));
                                     test2[Subjects - 1].setBackgroundResource(R.drawable.button_border_red);
@@ -1117,7 +1117,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         }
 
-                        if (!test1[Subjects - 1].getText().toString().isEmpty()) {
+                        if (!test1[Subjects - 1].getText().toString().isEmpty() && !test1[Subjects - 1].getText().toString().equals(".")) {
                             if (Double.valueOf(test1[Subjects - 1].getText().toString()) > 20 || Double.valueOf(test1[Subjects - 1].getText().toString()) < 0) {
                                 test1[Subjects - 1].setTextColor(getResources().getColor(R.color.red));
                                 test1[Subjects - 1].setBackgroundResource(R.drawable.button_border_red);
@@ -1129,7 +1129,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         if (application[Subjects - 1] != null) {
 
-                            if (!application[Subjects - 1].getText().toString().isEmpty()) {
+                            if (!application[Subjects - 1].getText().toString().isEmpty() && !application[Subjects - 1].getText().toString().equals(".")) {
                                 if (Double.valueOf(application[Subjects - 1].getText().toString()) > 20 || Double.valueOf(application[Subjects - 1].getText().toString()) < 0) {
                                     application[Subjects - 1].setTextColor(getResources().getColor(R.color.red));
                                     application[Subjects - 1].setBackgroundResource(R.drawable.button_border_red);
@@ -1141,7 +1141,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         }
 
-                        if (!ta9wim[Subjects - 1].getText().toString().isEmpty()) {
+                        if (!ta9wim[Subjects - 1].getText().toString().isEmpty() && !ta9wim[Subjects - 1].getText().toString().equals(".")) {
                             if (Double.valueOf(ta9wim[Subjects - 1].getText().toString()) > 20 || Double.valueOf(ta9wim[Subjects - 1].getText().toString()) < 0) {
                                 ta9wim[Subjects - 1].setTextColor(getResources().getColor(R.color.red));
                                 ta9wim[Subjects - 1].setBackgroundResource(R.drawable.button_border_red);
@@ -1155,7 +1155,7 @@ public class Languages_3as extends AppCompatActivity {
 
 
 
-                    if (!lasts[0].getText().toString().isEmpty()) {
+                    if (!lasts[0].getText().toString().isEmpty() && !lasts[0].getText().toString().equals(".")) {
                         if (Double.valueOf(lasts[0].getText().toString()) > 20 || Double.valueOf(lasts[0].getText().toString()) < 0) {
                             lasts[0].setTextColor(getResources().getColor(R.color.red));
                             lasts[0].setBackgroundResource(R.drawable.button_border_red);
@@ -1166,7 +1166,7 @@ public class Languages_3as extends AppCompatActivity {
                     }
 
 
-                    if (!lasts[1].getText().toString().isEmpty()) {
+                    if (!lasts[1].getText().toString().isEmpty() && !lasts[1].getText().toString().equals(".")) {
                         if (Double.valueOf(lasts[1].getText().toString()) > 20 || Double.valueOf(lasts[1].getText().toString()) < 0) {
                             lasts[1].setTextColor(getResources().getColor(R.color.red));
                             lasts[1].setBackgroundResource(R.drawable.button_border_red);
@@ -1183,16 +1183,16 @@ public class Languages_3as extends AppCompatActivity {
                 String exam_kabyle= "";
 
 
-                if(!exam[Subjects - 1].getText().toString().isEmpty()){
+                if(!exam[Subjects - 1].getText().toString().isEmpty() && !exam[Subjects - 1].getText().toString().equals(".")){
                     exam_kabyle = String.valueOf(exam[Subjects - 1].getText());
                 }
-                if(!test1[Subjects - 1].getText().toString().isEmpty()){
+                if(!test1[Subjects - 1].getText().toString().isEmpty() && !test1[Subjects - 1].getText().toString().equals(".")){
                     test1_kabyle = String.valueOf(test1[Subjects - 1].getText());
                 }
-                if(!test2[Subjects - 1].getText().toString().isEmpty()){
+                if(!test2[Subjects - 1].getText().toString().isEmpty() && !test2[Subjects - 1].getText().toString().equals(".")){
                     test2_kabyle= String.valueOf(test2[Subjects - 1].getText());
                 }
-                if(!ta9wim[Subjects - 1].getText().toString().isEmpty()){
+                if(!ta9wim[Subjects - 1].getText().toString().isEmpty() && !ta9wim[Subjects - 1].getText().toString().equals(".")){
                     ta9wim_kabyle = String.valueOf(ta9wim[Subjects - 1].getText());
                 }
 
@@ -1207,16 +1207,16 @@ public class Languages_3as extends AppCompatActivity {
                 String exam_sport= "";
 
 
-                if (!exam[Subjects - 2].getText().toString().isEmpty()) {
+                if (!exam[Subjects - 2].getText().toString().isEmpty() && !exam[Subjects - 2].getText().toString().equals(".")) {
                     exam_sport = String.valueOf(exam[Subjects - 2].getText());
                 }
-                if (!test1[Subjects - 2].getText().toString().isEmpty()) {
+                if (!test1[Subjects - 2].getText().toString().isEmpty() && !test1[Subjects - 2].getText().toString().equals(".")) {
                     test1_sport = String.valueOf(test1[Subjects - 2].getText());
                 }
-                if (!test2[Subjects - 2].getText().toString().isEmpty()) {
+                if (!test2[Subjects - 2].getText().toString().isEmpty() && !test2[Subjects - 2].getText().toString().equals(".")) {
                     test2_sport = String.valueOf(test2[Subjects - 2].getText());
                 }
-                if (!ta9wim[Subjects - 2].getText().toString().isEmpty()) {
+                if (!ta9wim[Subjects - 2].getText().toString().isEmpty() && !ta9wim[Subjects - 2].getText().toString().equals(".")) {
                     ta9wim_sport = String.valueOf(ta9wim[Subjects - 2].getText());
                 }
 
@@ -1272,7 +1272,7 @@ public class Languages_3as extends AppCompatActivity {
 
                         int devider = 5;
 
-                        if (!TextUtils.isEmpty(ta9wim[i].getText().toString())) {
+                        if (!TextUtils.isEmpty(ta9wim[i].getText().toString()) && !ta9wim[i].getText().toString().equals(".")) {
 
                             notes[i][0] = ta9wim[i];
 
@@ -1291,7 +1291,7 @@ public class Languages_3as extends AppCompatActivity {
                         if (!(application[i] == null)) {
 
 
-                            if (!TextUtils.isEmpty(application[i].getText().toString())) {
+                            if (!TextUtils.isEmpty(application[i].getText().toString()) && !application[i].getText().toString().equals(".")) {
 
                                 notes[i][1] = application[i];
 
@@ -1312,7 +1312,7 @@ public class Languages_3as extends AppCompatActivity {
                         }
 
 
-                        if (!TextUtils.isEmpty(test1[i].getText().toString())) {
+                        if (!TextUtils.isEmpty(test1[i].getText().toString()) && !test1[i].getText().toString().equals(".")) {
 
                             notes[i][2] = test1[i];
 
@@ -1328,7 +1328,7 @@ public class Languages_3as extends AppCompatActivity {
                         if (checkboxs[i].isChecked()) {
 
 
-                            if (!TextUtils.isEmpty(test2[i].getText().toString())) {
+                            if (!TextUtils.isEmpty(test2[i].getText().toString()) && !test2[i].getText().toString().equals(".")) {
 
                                 notes[i][3] = test2[i];
 
@@ -1347,7 +1347,7 @@ public class Languages_3as extends AppCompatActivity {
                         }
 
 
-                        if (!TextUtils.isEmpty(exam[i].getText().toString())) {
+                        if (!TextUtils.isEmpty(exam[i].getText().toString()) && !exam[i].getText().toString().equals(".")) {
 
                             notes[i][4] = exam[i];
 
@@ -1372,7 +1372,7 @@ public class Languages_3as extends AppCompatActivity {
 
                     double reading_note = 0;
                     EditText reading = findViewById(R.id.readind);
-                    if (!TextUtils.isEmpty(reading.getText().toString())) {
+                    if (!TextUtils.isEmpty(reading.getText().toString()) && !reading.getText().toString().equals(".")) {
 
                         reading_note = Double.valueOf(String.valueOf(reading.getText()));
 
@@ -1385,7 +1385,7 @@ public class Languages_3as extends AppCompatActivity {
 
                     double projects_note = 0;
                     EditText projects = findViewById(R.id.projects);
-                    if (!TextUtils.isEmpty(projects.getText().toString())) {
+                    if (!TextUtils.isEmpty(projects.getText().toString()) && !projects.getText().toString().equals(".")) {
 
                         projects_note = Double.valueOf(String.valueOf(projects.getText()));
 

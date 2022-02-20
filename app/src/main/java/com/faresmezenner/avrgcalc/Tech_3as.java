@@ -1213,7 +1213,7 @@ public class Tech_3as extends AppCompatActivity  {
 
 
 
-                    if (!lasts[0].getText().toString().isEmpty()) {
+                    if (!lasts[0].getText().toString().isEmpty() && !lasts[0].getText().toString().equals(".")) {
                             if (Double.valueOf(lasts[0].getText().toString()) > 20 || Double.valueOf(lasts[0].getText().toString()) < 0) {
                                 lasts[0].setTextColor(getResources().getColor(R.color.red));
                                 lasts[0].setBackgroundResource(R.drawable.button_border_red);
@@ -1224,7 +1224,7 @@ public class Tech_3as extends AppCompatActivity  {
                         }
 
 
-                        if (!lasts[1].getText().toString().isEmpty()) {
+                        if (!lasts[1].getText().toString().isEmpty() && !lasts[1].getText().toString().equals(".")) {
                             if (Double.valueOf(lasts[1].getText().toString()) > 20 || Double.valueOf(lasts[1].getText().toString()) < 0) {
                                 lasts[1].setTextColor(getResources().getColor(R.color.red));
                                 lasts[1].setBackgroundResource(R.drawable.button_border_red);
@@ -1437,7 +1437,7 @@ public class Tech_3as extends AppCompatActivity  {
 
                     double reading_note = 0;
                     EditText reading = findViewById(R.id.readind);
-                    if (!TextUtils.isEmpty(reading.getText().toString()) && reading.getText().toString().equals(".")) {
+                    if (!TextUtils.isEmpty(reading.getText().toString()) && !reading.getText().toString().equals(".")) {
 
                         reading_note = Double.valueOf(String.valueOf(reading.getText()));
 
@@ -1450,7 +1450,7 @@ public class Tech_3as extends AppCompatActivity  {
 
                     double projects_note = 0;
                     EditText projects = findViewById(R.id.projects);
-                    if (!TextUtils.isEmpty(projects.getText().toString()) && projects.getText().toString().equals(".")) {
+                    if (!TextUtils.isEmpty(projects.getText().toString()) && !projects.getText().toString().equals(".")) {
 
                         projects_note = Double.valueOf(String.valueOf(projects.getText()));
 

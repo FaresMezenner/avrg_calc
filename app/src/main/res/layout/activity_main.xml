@@ -104,6 +104,7 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/bac_cv"
                             android:layout_width="160dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="10dp"
@@ -120,6 +121,7 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/bem_cv"
                             android:layout_width="160dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="10dp"
@@ -198,6 +200,7 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/third_as_cv"
                             android:layout_width="160dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="10dp"
@@ -213,6 +216,7 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/second_as_cv"
                             android:layout_width="160dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="10dp"
@@ -229,6 +233,7 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/first_as_cv"
                             android:layout_width="160dp"
                             android:layout_height="80dp"
                             app:cardCornerRadius="10dp"
@@ -308,6 +313,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/forth_am_cv"
                         android:layout_width="160dp"
                         android:layout_height="80dp"
                         app:cardCornerRadius="10dp"
@@ -323,6 +329,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/third_am_cv"
                         android:layout_width="160dp"
                         android:layout_height="80dp"
                         app:cardCornerRadius="10dp"
@@ -339,6 +346,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/second_am_cv"
                         android:layout_width="160dp"
                         android:layout_height="80dp"
                         app:cardCornerRadius="10dp"
@@ -355,6 +363,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/first_am_cv"
                         android:layout_width="160dp"
                         android:layout_height="80dp"
                         app:cardCornerRadius="10dp"

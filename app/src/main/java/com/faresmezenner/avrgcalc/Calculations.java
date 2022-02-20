@@ -66,6 +66,7 @@ public class Calculations {
 
             sum = sum + (avrgs[i]*coefficients[i]);
             devider = devider + coefficients[i];
+            Log.d("devider", String.valueOf(devider));
 
         }
 
@@ -167,9 +168,6 @@ public class Calculations {
 
         double result = sum/5;
 
-        DecimalFormat df = new DecimalFormat("#.##");
-        df.setRoundingMode(RoundingMode.HALF_UP);
-
         return normalizer(result);
 
 
@@ -179,13 +177,24 @@ public class Calculations {
 
 
 
-        String t1 = String.valueOf(t);
+
+        String t1;
 
         String t2 = "";
 
+        Log.d("normal", String.valueOf(t));
 
         if(t >10){
 
+            Log.d("normal", String.valueOf(((t*1000)%10)));
+
+            if(((t*1000)%10) > 5){
+                t = t + 0.01;
+            }
+
+            Log.d("normal", String.valueOf(t));
+
+            t1 = String.valueOf(t);
             if(t1.length() > 5) {
 
                 for(int i = 0; i<5; i++) {
@@ -203,7 +212,11 @@ public class Calculations {
 
         } else {
 
+            if(((t*1000)%10) > 5){
+                t = t + 0.01;
+            }
 
+            t1 = String.valueOf(t);
             if(t1.length() > 4) {
 
                 for(int i = 0; i<4; i++) {
@@ -223,7 +236,9 @@ public class Calculations {
 
         double c = Double.valueOf(t2);
 
+        Log.d("normal", String.valueOf(c));
         return c;
+
 
 
     }

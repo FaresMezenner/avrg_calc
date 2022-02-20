@@ -160,7 +160,7 @@ public class Bem extends AppCompatActivity {
                 for(int i  = 0; i<SUBJECTS; i++){
 
                     String key = "note" + i;
-                    if(!hasFocus && !note[i].getText().toString().isEmpty()){
+                    if(!hasFocus && !note[i].getText().toString().isEmpty() && !note[i].getText().toString().equals(".")){
                         if (Double.valueOf(note[i].getText().toString()) > 20 || Double.valueOf(note[i].getText().toString()) < 0) {
                             note[i].setTextColor(getResources().getColor(R.color.red));
                             note[i].setBackgroundResource(R.drawable.button_border_red);
@@ -382,7 +382,7 @@ public class Bem extends AppCompatActivity {
 
                 for(int i = 0; i<SUBJECTS-4; i++){
 
-                    if (!note[i].getText().toString().isEmpty()) {
+                    if (!note[i].getText().toString().isEmpty() && !note[i].getText().toString().equals(".")) {
                         if (Double.valueOf(note[i].getText().toString()) > 20 || Double.valueOf(note[i].getText().toString()) < 0) {
                             note[i].setTextColor(getResources().getColor(R.color.red));
                             note[i].setBackgroundResource(R.drawable.button_border_red);
@@ -396,7 +396,7 @@ public class Bem extends AppCompatActivity {
                 
                 if(sport_checkbox.isChecked()){
 
-                    if (!note[12].getText().toString().isEmpty()) {
+                    if (!note[12].getText().toString().isEmpty() && !note[12].getText().toString().equals(".")) {
                         if (Double.valueOf(note[12].getText().toString()) > 20 || Double.valueOf(note[12].getText().toString()) < 0) {
                             note[12].setTextColor(getResources().getColor(R.color.red));
                             note[12].setBackgroundResource(R.drawable.button_border_red);
@@ -410,7 +410,7 @@ public class Bem extends AppCompatActivity {
 
                 if(music_checkbox.isChecked()){
 
-                    if (!note[11].getText().toString().isEmpty()) {
+                    if (!note[11].getText().toString().isEmpty() && !note[11].getText().toString().equals(".")) {
                         if (Double.valueOf(note[11].getText().toString()) > 20 || Double.valueOf(note[11].getText().toString()) < 0) {
                             note[11].setTextColor(getResources().getColor(R.color.red));
                             note[11].setBackgroundResource(R.drawable.button_border_red);
@@ -424,7 +424,7 @@ public class Bem extends AppCompatActivity {
 
                 if(art_checkbox.isChecked()){
 
-                    if (!note[10].getText().toString().isEmpty()) {
+                    if (!note[10].getText().toString().isEmpty() && !note[10].getText().toString().equals(".")) {
                         if (Double.valueOf(note[10].getText().toString()) > 20 || Double.valueOf(note[10].getText().toString()) < 0) {
                             note[10].setTextColor(getResources().getColor(R.color.red));
                             note[10].setBackgroundResource(R.drawable.button_border_red);
@@ -438,7 +438,7 @@ public class Bem extends AppCompatActivity {
 
                 if(kabyle_checkbox.isChecked()){
 
-                    if (!note[9].getText().toString().isEmpty()) {
+                    if (!note[9].getText().toString().isEmpty() && !note[9].getText().toString().equals(".")) {
                         if (Double.valueOf(note[9].getText().toString()) > 20 || Double.valueOf(note[9].getText().toString()) < 0) {
                             note[9].setTextColor(getResources().getColor(R.color.red));
                             note[9].setBackgroundResource(R.drawable.button_border_red);
@@ -457,16 +457,16 @@ public class Bem extends AppCompatActivity {
                 String kabyle_note = "";
 
 
-                if(!note[12].getText().toString().isEmpty()){
+                if(!note[12].getText().toString().isEmpty() && !note[12].getText().toString().equals(".")){
                     sport_note = String.valueOf(note[12].getText());
                 }
-                if(!note[11].getText().toString().isEmpty()){
+                if(!note[11].getText().toString().isEmpty() && !note[11].getText().toString().equals(".")){
                     music_note = String.valueOf(note[11].getText());
                 }
-                if(!note[10].getText().toString().isEmpty()){
+                if(!note[10].getText().toString().isEmpty() && !note[10].getText().toString().equals(".")){
                     art_note = String.valueOf(note[10].getText());
                 }
-                if(!note[9].getText().toString().isEmpty()){
+                if(!note[9].getText().toString().isEmpty() && !note[9].getText().toString().equals(".")){
                     kabyle_note = String.valueOf(note[9].getText());
                 }
                 
@@ -523,7 +523,7 @@ public class Bem extends AppCompatActivity {
 
                 for(int i = 0; i < SUBJECTS; i++){
 
-                    if((TextUtils.isEmpty(note[i].getText().toString()))){
+                    if((TextUtils.isEmpty(note[i].getText().toString())) || note[i].getText().toString().equals(".")){
                         success = false;
                         alerdialog.show();
                         break;
